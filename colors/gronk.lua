@@ -54,7 +54,7 @@ M.highlights = {
 	CmpDocumentation = { fg = M.base.fg, bg = M.base.window_bg },
 	CmpDocumentationBorder = { fg = M.base.window_accent, bg = M.base.window_bg },
 	CmpItemAbbr = { fg = M.base.fg, bg = M.base.none },
-	CmpItemAbbrDeprecated = { fg = M.base.gray_dark, bg = M.base.none, style = "strikethrough" },
+	CmpItemAbbrDeprecated = { fg = M.base.gray_dark, bg = M.base.none, strikethrough = true },
 	CmpItemAbbrMatch = { fg = M.primary, bg = M.base.none },
 	CmpItemAbbrMatchFuzzy = { fg = M.primary, bg = M.base.none },
 
@@ -150,8 +150,8 @@ M.highlights = {
 	LspLens = { fg = M.base.gray_light },
 
 	-- Rust
-	["@type.qualifier.rust"] = { fg = M.code.keyword, style = "underline" },
-	["@lsp.mod.mutable"] = { style = "underline" },
+	["@type.qualifier.rust"] = { fg = M.code.keyword, underline = true },
+	["@lsp.mod.mutable"] = { underline = true },
 	["@lsp.typemod.namespace.crateRoot"] = { fg = M.code.namespace }, -- link = "@module"
 	["@lsp.typemod.interface.declaration"] = { fg = M.code.interface },
 	["@lsp.mod.unsafe"] = { fg = M.code.error },
