@@ -167,7 +167,7 @@ end
 vim.api.nvim_create_autocmd("ModeChanged", {
 	pattern = "*",
 	callback = function()
-		local colors = require("config/colors")
+		local colors = require("gronk")
 		local mode = vim.api.nvim_get_mode().mode
 		local color = colors.mode[mode] or colors.M.base.orange
 
