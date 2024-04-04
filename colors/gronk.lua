@@ -1,12 +1,34 @@
+-- Basic theme setup
+local name = "gronk"
 vim.o.background = "dark"
 vim.cmd.highlight("clear")
 if vim.g.syntax_on then
 	vim.cmd.syntax("reset")
 end
-vim.g.colors_name = "gronk"
+vim.g.colors_name = name
 
-local M = require("gronk")
+-- Declare the theme object
+local M = require(name)
 
+-- Set tty colors
+-- vim.g.terminal_color_0 = M.base.bg
+-- vim.g.terminal_color_1 = M.base.bg
+-- vim.g.terminal_color_2 = M.base.bg
+-- vim.g.terminal_color_3 = M.base.bg
+-- vim.g.terminal_color_4 = M.base.bg
+-- vim.g.terminal_color_5 = M.base.bg
+-- vim.g.terminal_color_6 = M.base.bg
+-- vim.g.terminal_color_7 = M.base.bg
+-- vim.g.terminal_color_8 = M.base.bg
+-- vim.g.terminal_color_9 = M.base.bg
+-- vim.g.terminal_color_10 = M.base.bg
+-- vim.g.terminal_color_11 = M.base.bg
+-- vim.g.terminal_color_12 = M.base.bg
+-- vim.g.terminal_color_13 = M.base.bg
+-- vim.g.terminal_color_14 = M.base.bg
+-- vim.g.terminal_color_15 = M.base.bg
+
+-- Set the highlights
 M.highlights = {
 	-- Theme
 	Normal = { fg = M.base.fg, bg = M.base.none },   -- Current window
@@ -97,7 +119,7 @@ M.highlights = {
 	CopilotSuggestion = { fg = M.base.gray_dark },
 	CopilotAnnotation = { fg = M.base.gray_light },
 
-	-- M.code
+	-- Code
 	["@boolean"] = { fg = M.code.keyword },
 	["@constant.macro"] = { fg = M.code.macro },
 	["@constant"] = { fg = M.code.constant },
@@ -160,24 +182,28 @@ M.highlights = {
 	["@lsp.type.stringEscapeCharacter.cs"] = { fg = M.code.escape },
 }
 
+-- Applies the highlights
 for k, v in pairs(M.highlights) do
 	vim.api.nvim_set_hl(0, k, v)
 end
 
+-- Autocmd that changes the color of elements based on mode
 vim.api.nvim_create_autocmd("ModeChanged", {
-	group = vim.api.nvim_create_augroup("gronk", { clear = true }),
+	group = vim.api.nvim_create_augroup(name, { clear = true }),
 	pattern = "*",
 	callback = function()
-		local colors = require("gronk")
+		local colors = require(name)
 		local mode = vim.api.nvim_get_mode().mode
 		local color = colors.mode[mode] or colors.M.base.orange
 
+		-- Setup the highlights
 		local highlights = {
 			LineNr = { fg = color },
 			Cursor = { bg = color },
 			lCursor = { bg = color },
 		}
 
+		-- Applies the highlights
 		for k, v in pairs(highlights) do
 			vim.api.nvim_set_hl(0, k, v)
 		end
