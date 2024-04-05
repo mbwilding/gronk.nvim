@@ -5,7 +5,7 @@ A Rider inspired theme
 ### Setup
 
 Lazy
-```
+```lua
 return {
 	"mbwilding/gronk.nvim",
 	config = function()
