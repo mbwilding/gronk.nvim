@@ -60,8 +60,8 @@ M.highlights = {
 	WinSeparator = { fg = M.base.window_accent, bg = M.base.window_bg }, -- Window border
 	WinBar = { fg = M.base.fg, bg = M.base.window_bg },
 	WinBarNC = { fg = M.base.fg, bg = M.base.window_bg },
-	StatusLine = { fg = M.base.fg, bg = M.base.none },
-	StatusLineNC = { fg = M.base.fg, bg = M.base.none },
+	StatusLine = { fg = M.base.fg, bg = M.base.bg },
+	StatusLineNC = { fg = M.base.fg, bg = M.base.bg },
 	Folded = { fg = M.base.blue_dark, bg = M.base.none }, -- Folded gutter
 	TabLine = { fg = M.base.fg, bg = M.base.window_accent },
 	TabLineSel = { fg = M.base.window_bg, bg = M.base.blue_dark },
