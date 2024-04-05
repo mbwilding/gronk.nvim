@@ -67,10 +67,10 @@ M.code = {
 	error = M.base.red,
 }
 
-M.primary = M.base.blue_light
-M.secondary = M.base.orange_dark
+M.primary = M.base.orange_dark
+M.secondary = M.base.blue_light
 
-if M.options.switch then
+if false then
 	M.primary = M.base.orange_dark
 	M.secondary = M.base.blue_light
 end
