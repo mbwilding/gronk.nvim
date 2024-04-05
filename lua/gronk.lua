@@ -1,6 +1,19 @@
 local M = {}
 
-M.switch = true
+function M.defaults()
+	local defaults = {
+		transparent = true,
+		switch = false,
+	}
+	return defaults
+end
+
+M.options = {}
+
+function M.setup(options)
+	options = options or {}
+	M.options = vim.tbl_deep_extend("force", {}, M.defaults(), options)
+end
 
 M.base = {
 	none = "NONE",
@@ -57,7 +70,7 @@ M.code = {
 M.primary = M.base.blue_light
 M.secondary = M.base.orange_dark
 
-if M.switch then
+if M.options.switch then
 	M.primary = M.base.orange_dark
 	M.secondary = M.base.blue_light
 end
