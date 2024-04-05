@@ -176,6 +176,7 @@ M.highlights = {
 	-- Rust
 	["@type.qualifier.rust"] = { fg = M.code.keyword, underline = true },
 	["@lsp.mod.mutable"] = { underline = true },
+	["@lsp.mod.declaration.rust"] = { fg = M.base.fg },
 	["@lsp.typemod.namespace.crateRoot"] = { fg = M.code.namespace }, -- link = "@module"
 	["@lsp.typemod.interface.declaration"] = { fg = M.code.interface },
 	["@lsp.mod.unsafe"] = { fg = M.code.error },
