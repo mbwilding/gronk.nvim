@@ -7,17 +7,13 @@ A Rider inspired theme
 Lazy
 ```lua
 return {
-	"mbwilding/gronk.nvim",
-	config = function()
-		require("gronk").setup({
-			transparent = true,
-		})
-
-		vim.cmd([[colorscheme gronk]])
-
-		vim.keymap.set("n", "<leader>tG", function()
-			vim.cmd([[colorscheme gronk]])
-		end, { desc = "Theme: Gronk" })
-	end,
+  "mbwilding/gronk.nvim",
+  config = function()
+    require("gronk").setup({
+      transparent = true,
+    })
+	
+    vim.cmd([[colorscheme gronk]])
+  end,
 }
 ```
