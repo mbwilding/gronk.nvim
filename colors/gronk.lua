@@ -191,26 +191,3 @@ M.highlights = {
 for k, v in pairs(M.highlights) do
 	vim.api.nvim_set_hl(0, k, v)
 end
-
--- Autocmd that changes the color of elements based on mode
-vim.api.nvim_create_autocmd("ModeChanged", {
-	group = vim.api.nvim_create_augroup(name, { clear = true }),
-	pattern = "*",
-	callback = function()
-		local colors = require(name)
-		local mode = vim.api.nvim_get_mode().mode
-		local color = colors.mode[mode] or colors.M.base.orange
-
-		-- Setup the highlights
-		local highlights = {
-			LineNr = { fg = color },
-			Cursor = { bg = color },
-			lCursor = { bg = color },
-		}
-
-		-- Applies the highlights
-		for k, v in pairs(highlights) do
-			vim.api.nvim_set_hl(0, k, v)
-		end
-	end,
-})
