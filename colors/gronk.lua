@@ -124,8 +124,9 @@ M.highlights = {
 	-- Code
 	["@attribute"] = { fg = M.code.attribute },
 	["@boolean"] = { fg = M.code.keyword },
-	["@constant.macro"] = { fg = M.code.macro },
+	["@character"] = { fg = M.code.number },
 	["@constant"] = { fg = M.code.constant },
+	["@constant.macro"] = { fg = M.code.macro },
 	["@constructor"] = { fg = M.code.struct },
 	["@function.macro"] = { fg = M.code.macro },
 	["@lsp.mod.declaration"] = { fg = M.code.module },
