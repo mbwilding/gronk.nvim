@@ -33,11 +33,11 @@ local trans = M.options.transparent and M.base.none or M.base.bg
 -- Set the highlights
 M.highlights = {
 	-- Theme
-	Normal = { fg = M.base.fg, bg = trans },   -- Current window
-	NormalNC = { fg = M.base.fg, bg = trans }, -- Non-current window
-	ColorColumn = { fg = M.base.fg, bg = trans }, -- Columns set with `colorcolumn`
-	NormalFloat = { fg = M.base.fg, bg = trans }, -- Normal text in floating windows
-	NormalSB = { fg = M.base.fg, bg = trans }, -- Normal text in sidebar
+	Normal = { fg = M.base.fg, bg = trans },              -- Current window
+	NormalNC = { fg = M.base.fg, bg = trans },            -- Non-current window
+	ColorColumn = { fg = M.base.fg, bg = trans },         -- Columns set with `colorcolumn`
+	NormalFloat = { fg = M.base.fg, bg = M.base.window_bg }, -- Normal text in floating windows
+	NormalSB = { fg = M.base.fg, bg = trans },            -- Normal text in sidebar
 
 	-- Gutter
 	LineNr = { fg = M.primary, bg = M.base.none },          -- Current line number
