@@ -33,33 +33,33 @@ local trans = M.options.transparent and M.base.none or M.base.bg
 -- Set the highlights
 M.highlights = {
 	-- Theme
-	Normal = { fg = M.base.fg, bg = trans },              -- Current window
-	NormalNC = { fg = M.base.fg, bg = trans },            -- Non-current window
-	ColorColumn = { fg = M.base.fg, bg = trans },         -- Columns set with `colorcolumn`
+	Normal = { fg = M.base.fg, bg = trans }, -- Current window
+	NormalNC = { fg = M.base.fg, bg = trans }, -- Non-current window
+	ColorColumn = { fg = M.base.fg, bg = trans }, -- Columns set with `colorcolumn`
 	NormalFloat = { fg = M.base.fg, bg = M.base.window_bg }, -- Normal text in floating windows
-	NormalSB = { fg = M.base.fg, bg = trans },            -- Normal text in sidebar
+	NormalSB = { fg = M.base.fg, bg = trans }, -- Normal text in sidebar
 
 	-- Gutter
-	LineNr = { fg = M.primary, bg = M.base.none },          -- Current line number
-	CursorLineNr = { fg = M.primary, bg = M.base.none },    -- Unknown
+	LineNr = { fg = M.primary, bg = M.base.none }, -- Current line number
+	CursorLineNr = { fg = M.primary, bg = M.base.none }, -- Unknown
 	LineNrAbove = { fg = M.code.redundant, bg = M.base.none }, -- Above current line numbers
 	LineNrBelow = { fg = M.code.redundant, bg = M.base.none }, -- Below current line numbers
 
 	-- Generic
-	MatchParen = { fg = M.base.bg, bg = M.base.blue_dark },           -- Matching pair highlight
-	Cursor = { fg = M.base.fg, bg = M.secondary },                    -- Character under the cursor
-	lCursor = { fg = M.base.fg, bg = M.secondary },                   -- Character under the cursor when `language-mapping`
-	CursorIM = { fg = M.base.fg, bg = M.base.bg },                    -- Character under the cursor in IME mode
-	CursorLine = { fg = M.base.blue_dark, bg = M.base.none },         -- Screen line at the cursor
-	IncSearch = { fg = M.base.bg, bg = M.base.blue_dark },            -- Yank highlight
-	Conceal = { fg = M.code.redundant, bg = M.base.none },            -- Grayed out
-	EndOfBuffer = { fg = M.base.bg },                                 -- End of buffer `~`
-	DiffAdd = { fg = M.base.green },                                  -- Diff add
-	DiffChange = { fg = M.base.orange_dark },                         -- Diff change
-	DiffDelete = { fg = M.code.error },                               -- Diff delete
-	ErrorMsg = { fg = M.code.error },                                 -- Error messages on the commandline
+	MatchParen = { fg = M.base.bg, bg = M.base.blue_dark }, -- Matching pair highlight
+	Cursor = { fg = M.base.fg, bg = M.secondary }, -- Character under the cursor
+	lCursor = { fg = M.base.fg, bg = M.secondary }, -- Character under the cursor when `language-mapping`
+	CursorIM = { fg = M.base.fg, bg = M.base.bg }, -- Character under the cursor in IME mode
+	CursorLine = { fg = M.base.blue_dark, bg = M.base.none }, -- Screen line at the cursor
+	IncSearch = { fg = M.base.bg, bg = M.base.blue_dark }, -- Yank highlight
+	Conceal = { fg = M.code.redundant, bg = M.base.none }, -- Grayed out
+	EndOfBuffer = { fg = M.base.bg }, -- End of buffer `~`
+	DiffAdd = { fg = M.base.green }, -- Diff add
+	DiffChange = { fg = M.base.orange_dark }, -- Diff change
+	DiffDelete = { fg = M.code.error }, -- Diff delete
+	ErrorMsg = { fg = M.code.error }, -- Error messages on the commandline
 	VertSplit = { fg = M.base.window_accent, bg = M.base.window_bg }, -- Vertical split border
-	WinSeparator = { fg = M.base.window_accent, bg = M.base.window_bg }, -- Window border
+	WinSeparator = { fg = trans, bg = M.base.none }, -- Window border
 	WinBar = { fg = M.base.fg, bg = M.base.window_bg },
 	WinBarNC = { fg = M.base.fg, bg = M.base.window_bg },
 	StatusLine = { fg = M.base.fg, bg = trans },
