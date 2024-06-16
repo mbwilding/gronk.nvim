@@ -146,7 +146,7 @@ M.highlights = {
 	["@function.macro"] = { fg = M.code.macro },
 	["@lsp.mod.declaration"] = { fg = M.code.module },
 	["@lsp.mod.library"] = { fg = M.code.module },
-	["@lsp.mod.static"] = { fg = M.code.constant },
+	-- ["@lsp.mod.static"] = { fg = M.code.constant },
 	["@lsp.type.formatSpecifier"] = { fg = M.code.struct },
 	["@lsp.type.invalidEscapeSequence"] = { fg = M.code.error },
 	["@lsp.type.keyword"] = { fg = M.code.keyword },
