@@ -191,6 +191,9 @@ M.highlights = {
 
 	-- CSharp
 	["@lsp.type.stringEscapeCharacter.cs"] = { fg = M.code.escape },
+
+	-- TypeScript
+	["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = M.code.struct },
 }
 
 -- Applies the highlights
