@@ -194,7 +194,7 @@ M.highlights = {
 
 	-- TypeScript
 	["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = M.code.struct },
-	["@lsp.mod.defaultLibrary.typescriptreact"] = { fg = M.code.struct },
+	["@lsp.typemod.variable.defaultLibrary.typescriptreact"] = { fg = M.code.struct },
 }
 
 -- Applies the highlights
