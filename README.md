@@ -1,6 +1,6 @@
 # Gronk
 
-A Rider inspired theme
+A Rider Dark inspired theme
 
 ### Setup
 
