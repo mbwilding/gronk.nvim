@@ -195,7 +195,7 @@ M.highlights = {
 	["@lsp.type.stringEscapeCharacter.cs"] = { fg = M.code.escape },
 
 	-- TypeScript
-	["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = M.code.struct },
+	-- ["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = M.code.struct },
 	-- ["@lsp.typemod.variable.defaultLibrary.typescriptreact"] = { fg = M.code.struct },
 }
 
