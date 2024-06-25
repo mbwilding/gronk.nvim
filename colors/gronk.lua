@@ -147,7 +147,9 @@ M.highlights = {
 	["@lsp.mod.declaration"] = { fg = M.code.module },
 	["@lsp.mod.library"] = { fg = M.code.module },
 	-- ["@lsp.mod.static"] = { fg = M.code.constant },
+	["@lsp.type.fieldName"] = { fg = M.code.member },
 	["@lsp.type.formatSpecifier"] = { fg = M.code.struct },
+	["@lsp.type.interface"] = { fg = M.code.interface },
 	["@lsp.type.invalidEscapeSequence"] = { fg = M.code.error },
 	["@lsp.type.keyword"] = { fg = M.code.keyword },
 	["@lsp.typemod.decorator.attribute"] = { fg = M.code.attribute },
@@ -194,7 +196,7 @@ M.highlights = {
 
 	-- TypeScript
 	["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = M.code.struct },
-	["@lsp.typemod.variable.defaultLibrary.typescriptreact"] = { fg = M.code.struct },
+	-- ["@lsp.typemod.variable.defaultLibrary.typescriptreact"] = { fg = M.code.struct },
 }
 
 -- Applies the highlights
