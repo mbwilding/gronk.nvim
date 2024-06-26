@@ -165,6 +165,7 @@ M.highlights = {
 	["@lsp.typemod.property.declaration"] = { fg = M.code.member },
 	["@lsp.typemod.struct"] = { fg = M.code.struct },
 	["@lsp.typemod.typeAlias.library"] = { fg = M.code.struct }, -- link = "Type"
+	["@lsp.typemod.typeParameter.declaration"] = { fg = M.code.struct },
 	["@lsp.typemod.variable"] = { fg = M.code.variable },
 	["@module"] = { fg = M.code.namespace },
 	["@string.escape"] = { fg = M.code.escape },
@@ -195,7 +196,6 @@ M.highlights = {
 	["@lsp.type.stringEscapeCharacter.cs"] = { fg = M.code.escape },
 
 	-- TypeScript
-	-- ["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = M.code.struct },
 	-- ["@lsp.typemod.variable.defaultLibrary.typescriptreact"] = { fg = M.code.struct },
 }
 
