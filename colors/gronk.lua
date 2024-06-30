@@ -33,7 +33,6 @@ local trans = M.options.transparent and M.base.none or M.base.bg
 -- Set the highlights
 M.highlights = {
 	-- Theme
-	ColorColumn = { fg = M.base.fg, bg = trans }, -- Columns set with `colorcolumn`
 	Normal = { fg = M.base.fg, bg = trans }, -- Current window
 	NormalFloat = { fg = M.base.fg, bg = M.base.window_bg }, -- Normal text in floating windows
 	NormalNC = { fg = M.base.fg, bg = trans }, -- Non-current window
@@ -46,10 +45,12 @@ M.highlights = {
 	LineNrBelow = { fg = M.code.redundant, bg = M.base.none }, -- Below current line numbers
 
 	-- Generic
+	ColorColumn = { fg = M.base.fg, bg = M.base.window_accent }, -- Columns set with `colorcolumn`
 	Conceal = { fg = M.code.redundant, bg = M.base.none }, -- Grayed out
 	Cursor = { fg = M.base.fg, bg = M.secondary }, -- Character under the cursor
 	CursorIM = { fg = M.base.fg, bg = M.base.bg }, -- Character under the cursor in IME mode
 	CursorLine = { fg = M.base.blue_dark, bg = M.base.none }, -- Screen line at the cursor
+
 	DiffAdd = { fg = M.base.green }, -- Diff add
 	DiffChange = { fg = M.base.orange_dark }, -- Diff change
 	DiffDelete = { fg = M.code.error }, -- Diff delete
