@@ -57,8 +57,8 @@ M.highlights = {
 	EndOfBuffer = { fg = M.base.bg }, -- End of buffer `~`
 	ErrorMsg = { fg = M.code.error }, -- Error messages on the commandline
 	Folded = { fg = M.base.blue_dark, bg = M.base.none }, -- Folded gutter
-	IncSearch = { fg = M.base.bg, bg = M.base.blue_dark }, -- Yank highlight
-	MatchParen = { fg = M.base.bg, bg = M.base.blue_dark }, -- Matching pair highlight
+	IncSearch = { fg = M.base.bg, bg = M.secondary }, -- Yank highlight
+	MatchParen = { bg = M.primary }, -- Matching pair highlight
 	StatusLine = { fg = M.base.fg, bg = trans },
 	StatusLineNC = { fg = M.base.fg, bg = trans },
 	TabLine = { fg = M.base.fg, bg = M.base.window_accent },
