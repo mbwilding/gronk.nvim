@@ -94,8 +94,8 @@ M.highlights = {
     Title = { fg = M.secondary },
 
     -- Treesitter
-    TreesitterContextBottom = { underline = true },
-    TreesitterContextLineNumberBottom = { underline = true },
+    TreesitterContextBottom = { underline = true, sp = M.base.fg },
+    TreesitterContextLineNumberBottom = { underline = true, sp = M.base.fg },
 
     -- Mason
     MasonHeader = { fg = M.base.bg, bg = M.secondary },
