@@ -94,8 +94,8 @@ M.highlights = {
     Title = { fg = M.secondary },
 
     -- Treesitter Context
-    TreesitterContext = { bg = trans },
-    TreesitterContentLineNumber = { bg = trans },
+    TreesitterContext = { bg = trans, link = "NONE" },
+    TreesitterContentLineNumber = { bg = trans, link = "NONE" },
     TreesitterContextBottom = { underline = true, sp = M.base.fg, link = "NONE" },
     TreesitterContextLineNumberBottom = { underline = true, sp = M.base.fg, link = "NONE" },
 
