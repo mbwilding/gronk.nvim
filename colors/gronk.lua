@@ -93,9 +93,11 @@ M.highlights = {
     LazySpecial = { fg = M.secondary },
     Title = { fg = M.secondary },
 
-    -- Treesitter
-    TreesitterContextBottom = { underline = true, sp = M.base.fg },
-    TreesitterContextLineNumberBottom = { underline = true, sp = M.base.fg },
+    -- Treesitter Context
+    TreesitterContext = { bg = trans },
+    TreesitterContentLineNumber = { bg = trans },
+    TreesitterContextBottom = { underline = true, sp = M.base.fg, link = "NONE" },
+    TreesitterContextLineNumberBottom = { underline = true, sp = M.base.fg, link = "NONE" },
 
     -- Mason
     MasonHeader = { fg = M.base.bg, bg = M.secondary },
