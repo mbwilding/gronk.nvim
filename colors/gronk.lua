@@ -34,7 +34,7 @@ local trans = M.options.transparent and M.base.none or M.base.bg
 M.highlights = {
     -- Theme
     Normal = { fg = M.base.fg, bg = trans },                 -- Current window
-    NormalFloat = { fg = M.base.fg, bg = M.base.window_bg }, -- Normal text in floating windows
+    NormalFloat = { fg = M.base.fg, bg = M.base.window_accent }, -- Normal text in floating windows
     NormalNC = { fg = M.base.fg, bg = trans },               -- Non-current window
     NormalSB = { fg = M.base.fg, bg = trans },               -- Normal text in sidebar
 
