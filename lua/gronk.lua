@@ -21,7 +21,7 @@ M.base = {
 	-- Default UI
 	fg = "#bdbdbd",
 	bg = "#000000",
-	window_bg = "#000000",
+	window_bg = "#101010",
 	window_accent = "#202020",
 
 	-- Colors
