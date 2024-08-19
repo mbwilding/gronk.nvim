@@ -146,9 +146,9 @@ M.highlights = {
     LspLens = { fg = M.base.gray_light },
 
     -- Markdown
-    MarkviewInlineCode = { bg = M.base.window_accent },
-    MarkviewCode = { bg = M.base.window_accent },
-    MarkviewCodeInfo = { bg = M.base.window_accent },
+    MarkviewInlineCode = { bg = M.base.window_bg },
+    MarkviewCode = { bg = M.base.window_bg },
+    MarkviewCodeInfo = { bg = M.base.window_bg },
 
     -- Code
     Comment = { fg = M.code.comment },
@@ -170,7 +170,6 @@ M.highlights = {
     ["@function.macro"] = { fg = M.code.macro },
     ["@lsp.mod.declaration"] = { fg = M.code.module },
     ["@lsp.mod.library"] = { fg = M.code.module },
-    -- ["@lsp.mod.static"] = { fg = M.code.constant },
     ["@lsp.type.fieldName"] = { fg = M.code.member },
     ["@lsp.type.formatSpecifier"] = { fg = M.code.struct },
     ["@lsp.type.interface"] = { fg = M.code.interface },
@@ -206,9 +205,6 @@ M.highlights = {
 
     -- CSharp
     ["@lsp.type.stringEscapeCharacter.cs"] = { fg = M.code.escape },
-
-    -- TypeScript
-    -- ["@lsp.typemod.variable.defaultLibrary.typescriptreact"] = { fg = M.code.struct },
 }
 
 -- Applies the highlights
