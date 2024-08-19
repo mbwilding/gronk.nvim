@@ -75,6 +75,9 @@ M.highlights = {
     healthSuccess = { fg = M.base.green },
     healthWarning = { fg = M.base.orange_light },
 
+    -- Diagnostics
+    DiagnosticUnnecessary = { fg = M.code.redundant },
+
     -- Cmp
     CmpDocumentation = { fg = M.base.fg, bg = M.base.window_bg },
     CmpDocumentationBorder = { fg = M.base.window_accent, bg = M.base.window_bg },
@@ -133,6 +136,20 @@ M.highlights = {
     DapLogPoint = { fg = M.base.red },
     DapStopped = { fg = M.base.red },
 
+    -- nvim-notify
+    NoiceAttr = { fg = M.base.fg },
+    NotifyBackground = { bg = M.base.bg },
+    NotifyINFOBody = { fg = M.base.fg },
+
+    -- Hints
+    LspInlayHint = { fg = M.base.gray_dark },
+    LspLens = { fg = M.base.gray_light },
+
+    -- Markdown
+    MarkviewInlineCode = { bg = M.base.window_accent },
+    MarkviewCode = { bg = M.base.window_accent },
+    MarkviewCodeInfo = { bg = M.base.window_accent },
+
     -- Code
     Comment = { fg = M.code.comment },
     Delimiter = { fg = M.code.delimiter },
@@ -178,18 +195,6 @@ M.highlights = {
     ["@string.escape"] = { fg = M.code.escape },
     ["@variable"] = { fg = M.code.variable },
     ["@variable.member"] = { fg = M.code.member },
-
-    -- Diagnostics
-    DiagnosticUnnecessary = { fg = M.code.redundant },
-
-    -- nvim-notify
-    NoiceAttr = { fg = M.base.fg },
-    NotifyBackground = { bg = M.base.bg },
-    NotifyINFOBody = { fg = M.base.fg },
-
-    -- Hints
-    LspInlayHint = { fg = M.base.gray_dark },
-    LspLens = { fg = M.base.gray_light },
 
     -- Rust
     ["@lsp.mod.declaration.rust"] = { fg = M.base.fg },
