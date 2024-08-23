@@ -96,6 +96,7 @@ M.highlights = {
     CmpItemKindInterface                       = { fg = M.code.interface, bg = M.base.none },
     CmpItemKindStruct                          = { fg = M.code.struct, bg = M.base.none },
     CmpItemKindField                           = { fg = M.code.member, bg = M.base.none },
+    CmpItemKindKeyword                         = { fg = M.code.keyword, bg = M.base.none },
 
     -- Lazy
     LazyButton                                 = { fg = M.base.fg, bg = M.base.window_accent },
