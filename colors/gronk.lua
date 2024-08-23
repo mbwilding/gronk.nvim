@@ -86,10 +86,9 @@ M.highlights = {
     CmpItemAbbrMatch                           = { fg = M.base.blue_light, bg = M.base.none },
     CmpItemAbbrMatchFuzzy                      = { fg = M.base.blue_dark, bg = M.base.none },
     CmpItemKindDefault                         = { fg = M.base.orange_light, bg = M.base.none },
-    CmpItemKindMethod                          = { fg = M.code.method, bg = M.base.none },
-    CmpItemKindCodeium                         = { fg = M.base.orange_dark, bg = M.base.none },
     CmpItemKindCopilot                         = { fg = M.base.orange_dark, bg = M.base.none },
-    CmpItemKindTabNine                         = { fg = M.base.orange_dark, bg = M.base.none },
+    CmpItemKindMethod                          = { fg = M.code.method, bg = M.base.none },
+    CmpItemKindSnippet                         = { fg = M.code.macro, bg = M.base.none },
 
     -- Lazy
     LazyButton                                 = { fg = M.base.fg, bg = M.base.window_accent },
