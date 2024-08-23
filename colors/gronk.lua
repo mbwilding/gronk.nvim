@@ -87,6 +87,7 @@ M.highlights = {
     CmpItemAbbrMatchFuzzy                      = { fg = M.base.blue_dark, bg = M.base.none },
     CmpItemMenu                                = { fg = M.code.comment, bg = M.base.none },
     CmpItemKindDefault                         = { fg = M.base.orange_light, bg = M.base.none },
+    CmpItemKindMethod                          = { fg = M.base.red, bg = M.base.none },
     CmpItemKindCodeium                         = { fg = M.base.orange_dark, bg = M.base.none },
     CmpItemKindCopilot                         = { fg = M.base.orange_dark, bg = M.base.none },
     CmpItemKindTabNine                         = { fg = M.base.orange_dark, bg = M.base.none },
