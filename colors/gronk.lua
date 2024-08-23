@@ -88,6 +88,7 @@ M.highlights = {
     CmpItemKindDefault                         = { fg = M.base.orange_light, bg = M.base.none },
     CmpItemKindCopilot                         = { fg = M.base.orange_dark, bg = M.base.none },
     CmpItemKindMethod                          = { fg = M.code.method, bg = M.base.none },
+    CmpItemKindText                            = { fg = M.base.fg, bg = M.base.none },
     CmpItemKindEnum                            = { fg = M.code.enum, bg = M.base.none },
     CmpItemKindSnippet                         = { fg = M.code.macro, bg = M.base.none },
 
