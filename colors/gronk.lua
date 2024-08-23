@@ -91,6 +91,11 @@ M.highlights = {
     CmpItemKindText                            = { fg = M.base.fg, bg = M.base.none },
     CmpItemKindEnum                            = { fg = M.code.enum, bg = M.base.none },
     CmpItemKindSnippet                         = { fg = M.code.macro, bg = M.base.none },
+    CmpItemKindVariable                        = { fg = M.code.variable, bg = M.base.none },
+    CmpItemKindFunction                        = { fg = M.code.method, bg = M.base.none },
+    CmpItemKindInterface                       = { fg = M.code.interface, bg = M.base.none },
+    CmpItemKindStruct                          = { fg = M.code.struct, bg = M.base.none },
+    CmpItemKindField                           = { fg = M.code.member, bg = M.base.none },
 
     -- Lazy
     LazyButton                                 = { fg = M.base.fg, bg = M.base.window_accent },
