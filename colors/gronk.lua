@@ -74,6 +74,16 @@ M.highlights = {
     healthSuccess                              = { fg = M.base.green },
     healthWarning                              = { fg = M.base.orange_light },
 
+    -- NeoGit
+    NeogitChangeAdded                          = { fg = M.base.green },
+    NeogitChangeDeleted                        = { fg = M.base.red },
+    NeogitChangeModified                       = { fg = M.base.orange_light },
+    NeogitChangeRenamed                        = { fg = M.base.pink },
+    NeogitChangeUpdated                        = { fg = M.base.blue_light },
+    NeogitChangeCopied                         = { fg = M.base.blue_dark },
+    NeogitChangeNewFile                        = { fg = M.base.green },
+    NeogitChangeUnmerged                       = { fg = M.base.orange_dark },
+
     -- Diagnostics
     DiagnosticUnnecessary                      = { fg = M.code.redundant },
 
