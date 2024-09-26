@@ -3,7 +3,6 @@ local M = {}
 function M.defaults()
 	local defaults = {
 		transparent = true,
-		switch = false,
 	}
 	return defaults
 end
@@ -67,18 +66,10 @@ M.code = {
 	variable = M.base.fg,
 }
 
-M.primary = M.base.orange_dark
-M.secondary = M.base.blue_light
-
-if false then
-	M.primary = M.base.orange_dark
-	M.secondary = M.base.blue_light
-end
-
 M.mode = {
-	n = M.primary, -- Normal
-	i = M.secondary, -- Insert
-	v = M.base.green, -- Visual
+	n = M.base.orange_dark,
+	i = M.base.blue_light,
+	v = M.base.green,
 	[""] = M.base.blue_dark,
 	V = M.base.green,
 	c = M.base.orange_dark,
