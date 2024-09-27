@@ -21,8 +21,8 @@ M.highlights = {
     NormalSB                                   = { fg = M.base.fg, bg = trans },            -- Normal text in sidebar
 
     -- Gutter
-    CursorLineNr                               = { fg = M.base.orange_dark, bg = M.base.none }, -- Unknown
-    LineNr                                     = { fg = M.base.orange_dark, bg = M.base.none }, -- Current line number
+    CursorLineNr                               = { fg = M.code.redundant, bg = M.base.none },   -- Unknown
+    LineNr                                     = { fg = M.code.redundant, bg = M.base.none },   -- Current line number
     LineNrAbove                                = { fg = M.code.redundant, bg = M.base.none },   -- Above current line numbers
     LineNrBelow                                = { fg = M.code.redundant, bg = M.base.none },   -- Below current line numbers
 
