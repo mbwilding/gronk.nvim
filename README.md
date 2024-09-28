@@ -1,6 +1,6 @@
 # Gronk
 
-A Rider Dark inspired theme
+Neovim themes
 
 ### Setup
 
@@ -8,7 +8,6 @@ Lazy
 ```lua
 return {
   "mbwilding/gronk.nvim",
-  branch = "multi",
   lazy = false,
   priority = 1000,
   config = function()
@@ -16,7 +15,20 @@ return {
       transparent = true,
     })
 
-    vim.cmd([[colorscheme gronk-rider]])
+    vim.cmd([[colorscheme gronk]])
   end,
 }
+```
+
+#### Themes
+
+```vim
+" Defaults to gronk-rider
+colorscheme gronk
+
+" A JetBrains Rider Dark inspired theme
+colorscheme gronk-rider
+
+" A custom theme
+colorscheme gronk-wilding
 ```

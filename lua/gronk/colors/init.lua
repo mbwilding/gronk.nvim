@@ -4,7 +4,7 @@ local M = {}
 
 M.styles = setmetatable({}, {
     __index = function(_, style)
-    return vim.deepcopy(Util.mod("gronk.colors." .. style))
+        return vim.deepcopy(Util.mod("gronk.colors." .. style))
     end,
 })
 
