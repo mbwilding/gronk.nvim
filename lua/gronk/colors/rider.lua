@@ -11,7 +11,6 @@ return {
     constant = "#66c3cc",
     delimiter = "#bdbdbd",
     enum = "#c191ff",
-    error = "#ff3333",
     escape = "#ed94c0",
     hint = "#4f5258",
     interface = "#9591ff",
@@ -27,4 +26,9 @@ return {
     string = "#c9a26d",
     struct = "#c191ff",
     variable = "#bdbdbd",
+
+    --Other
+    good = "#39cc8f",
+    warn = "#ffb083",
+    error = "#ff3333",
 }

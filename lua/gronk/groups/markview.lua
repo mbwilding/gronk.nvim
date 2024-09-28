@@ -1,6 +1,6 @@
 local M = {}
 
-function M.get(c)
+function M.get(c, opts)
     return {
         MarkviewInlineCode = { bg = c.window_bg },
         MarkviewCode = { bg = c.window_bg },

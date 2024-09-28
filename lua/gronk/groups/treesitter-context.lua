@@ -1,6 +1,6 @@
 local M = {}
 
-function M.get(c)
+function M.get(c, opts)
     return {
         TreesitterContext = { bg = c.bg, link = c.none },
         TreesitterContentLineNumber = { bg = c.bg, link = c.none },

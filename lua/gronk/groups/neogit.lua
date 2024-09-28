@@ -1,6 +1,6 @@
 local M = {}
 
-function M.get(c)
+function M.get(c, opts)
     return {
         -- NeogitBranch               = { fg = c.magenta },
         -- NeogitRemote               = { fg = c.purple },
@@ -10,14 +10,14 @@ function M.get(c)
         -- NeogitDiffDeleteHighlight  = { fg = c.git.delete, bg = c.diff.delete },
         -- NeogitDiffAddHighlight     = { fg = c.git.add, bg = c.diff.add },
 
-        NeogitChangeAdded = { fg = c.method },
+        NeogitChangeAdded = { fg = c.good },
         NeogitChangeDeleted = { fg = c.error },
-        NeogitChangeModified = { fg = c.module },
-        NeogitChangeRenamed = { fg = c.pink },
-        NeogitChangeUpdated = { fg = c.macro },
-        NeogitChangeCopied = { fg = c.keyword },
-        NeogitChangeNewFile = { fg = c.method },
-        NeogitChangeUnmerged = { fg = c.namespace },
+        NeogitChangeModified = { fg = c.warn },
+        NeogitChangeRenamed = { fg = c.warn },
+        NeogitChangeUpdated = { fg = c.warn },
+        NeogitChangeCopied = { fg = c.good },
+        NeogitChangeNewFile = { fg = c.good },
+        NeogitChangeUnmerged = { fg = c.redundant },
     }
 end
 

@@ -1,6 +1,6 @@
 local M = {}
 
-function M.get(c)
+function M.get(c, opts)
     return {
         MasonHeader = { fg = c.bg, bg = c.macro },
         MasonHighlight = { fg = c.keyword, bg = c.none },

@@ -9,8 +9,8 @@ function M.get(c, opts)
         CursorLine = { fg = c.keyword, bg = c.none }, -- Screen line at the cursor
         CursorLineNr = { fg = c.redundant, bg = c.none }, -- Unknown
         DiagnosticUnnecessary = { fg = c.redundant },
-        DiffAdd = { fg = c.method }, -- Diff add
-        DiffChange = { fg = c.namespace }, -- Diff change
+        DiffAdd = { fg = c.good }, -- Diff add
+        DiffChange = { fg = c.warn }, -- Diff change
         DiffDelete = { fg = c.error }, -- Diff delete
         Directory = { fg = c.namespace },
         EndOfBuffer = { fg = c.bg }, -- End of buffer `~`
@@ -36,8 +36,8 @@ function M.get(c, opts)
         WinBarNC = { fg = c.fg, bg = c.window_bg },
         WinSeparator = { fg = c.bg, bg = c.none }, -- Window border
         healthError = { fg = c.error },
-        healthSuccess = { fg = c.method },
-        healthWarning = { fg = c.module },
+        healthSuccess = { fg = c.good },
+        healthWarning = { fg = c.warn },
         lCursor = { fg = c.fg, bg = c.macro }, -- Character under the cursor when `language-mapping`
     }
 end
