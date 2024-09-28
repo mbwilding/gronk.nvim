@@ -11,7 +11,7 @@ function M.get(c, opts)
         NeogitBranch             = { fg = c.macro },
         NeogitBranchHead         = { fg = c.interface },
         NeogitRemote             = { fg = c.struct },
-        NeogitObjectId           = { fg = c.number },
+        NeogitObjectId           = { fg = c.string },
         NeogitHead               = { fg = c.keyword },
         NeogitStash              = { fg = c.redundant },
         NeogitFold               = { fg = c.redundant },
