@@ -96,11 +96,6 @@ function M.get(c, opts)
         LspInlayHint                               = { fg = c.hint },
         LspLens                                    = { fg = c.redundant },
 
-        -- Markdown
-        MarkviewInlineCode                         = { bg = c.window_bg },
-        MarkviewCode                               = { bg = c.window_bg },
-        MarkviewCodeInfo                           = { bg = c.window_bg },
-
         -- Code
         Comment                                    = { fg = c.comment },
         Delimiter                                  = { fg = c.delimiter },
