@@ -12,6 +12,7 @@ function M.mod(modname)
         return package.loaded[modname]
     end
     local path = me .. "/" .. modname:gsub("%.", "/") .. ".lua"
+    print(path)
     local ret = loadfile(path)()
     package.loaded[modname] = ret
     return ret

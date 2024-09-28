@@ -5,14 +5,10 @@ local M = {}
 
 M.plugins = {
     -- Plugins
-    ["lazy.nvim"] = "plugins/lazy",
-    ["markview"]  = "plugins/markview",
-    ["neogit"]    = "plugins/neogit",
-    ["nvim-cmp"]  = "plugins/cmp",
-
-    -- Languages
-    ["csharp"]    = "languages/csharp",
-    ["rust"]      = "languages/rust",
+    ["lazy.nvim"]     = "lazy",
+    ["markview.nvim"] = "markview",
+    ["neogit"]        = "neogit",
+    ["nvim-cmp"]      = "cmp",
 
     ---- Reference
     -- ["aerial.nvim"]                   = "aerial",
@@ -79,7 +75,8 @@ local me = debug.getinfo(1, "S").source:sub(2)
 me = vim.fn.fnamemodify(me, ":h")
 
 function M.get_group(name)
-    return Util.mod("gronk.groups." .. name)
+    local groups = Util.mod("gronk.groups." .. name)
+    return groups
 end
 
 function M.get(name, colors, opts)
@@ -90,6 +87,9 @@ end
 function M.setup(colors, opts)
     local groups = {
         base = true,
+        language_base = true,
+        language_csharp = true,
+        language_rust = true,
     }
 
     if opts.plugins.all then

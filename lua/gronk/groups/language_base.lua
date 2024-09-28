@@ -1,0 +1,52 @@
+local M = {}
+
+function M.get(c)
+    print("YAY")
+    return {
+        Comment                                    = { fg = c.comment },
+        Delimiter                                  = { fg = c.delimiter },
+        Function                                   = { fg = c.method },
+        Identifier                                 = { fg = c.member },
+        Number                                     = { fg = c.number },
+        Operator                                   = { fg = c.operator },
+        Special                                    = { fg = c.keyword },
+        Statement                                  = { fg = c.keyword },
+        String                                     = { fg = c.string },
+        Type                                       = { fg = c.struct },
+        ["@attribute"]                             = { fg = c.attribute },
+        ["@boolean"]                               = { fg = c.keyword },
+        ["@character"]                             = { fg = c.number },
+        ["@constant"]                              = { fg = c.constant },
+        ["@constant.macro"]                        = { fg = c.macro },
+        ["@constructor"]                           = { fg = c.struct },
+        ["@function.macro"]                        = { fg = c.macro },
+        ["@lsp.mod.declaration"]                   = { fg = c.module },
+        ["@lsp.mod.library"]                       = { fg = c.module },
+        ["@lsp.type.fieldName"]                    = { fg = c.member },
+        ["@lsp.type.formatSpecifier"]              = { fg = c.struct },
+        ["@lsp.type.interface"]                    = { fg = c.interface },
+        ["@lsp.type.invalidEscapeSequence"]        = { fg = c.error },
+        ["@lsp.type.keyword"]                      = { fg = c.keyword },
+        ["@lsp.typemod.decorator.attribute"]       = { fg = c.attribute },
+        ["@lsp.typemod.derive"]                    = { fg = c.interface },
+        ["@lsp.typemod.enum"]                      = { fg = c.enum },
+        ["@lsp.typemod.enumMember"]                = { fg = c.constant },
+        ["@lsp.typemod.function"]                  = { fg = c.method },
+        ["@lsp.typemod.interface.library"]         = { fg = c.interface },
+        ["@lsp.typemod.macro"]                     = { fg = c.macro },
+        ["@lsp.typemod.method"]                    = { fg = c.method },
+        ["@lsp.typemod.operator.controlFlow"]      = { fg = c.keyword },
+        ["@lsp.typemod.property"]                  = { fg = c.member },
+        ["@lsp.typemod.property.declaration"]      = { fg = c.member },
+        ["@lsp.typemod.struct"]                    = { fg = c.struct },
+        ["@lsp.typemod.typeAlias.library"]         = { fg = c.struct },
+        ["@lsp.typemod.typeParameter.declaration"] = { fg = c.struct },
+        ["@lsp.typemod.variable"]                  = { fg = c.variable },
+        ["@module"]                                = { fg = c.namespace },
+        ["@string.escape"]                         = { fg = c.escape },
+        ["@variable"]                              = { fg = c.variable },
+        ["@variable.member"]                       = { fg = c.member },
+    }
+end
+
+return M

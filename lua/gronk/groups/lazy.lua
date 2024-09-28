@@ -1,7 +1,5 @@
 local M = {}
 
-M.url = "https://github.com/folke/lazy.nvim"
-
 function M.get(c, opts)
     return {
         LazyButton       = { fg = c.fg, bg = c.window_accent },

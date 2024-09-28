@@ -1,7 +1,5 @@
 local M = {}
 
-M.url = "https://github.com/TimUntersberger/neogit"
-
 function M.get(c)
     return {
         -- NeogitBranch               = { fg = c.magenta },
@@ -20,7 +18,6 @@ function M.get(c)
         NeogitChangeCopied                         = { fg = c.keyword },
         NeogitChangeNewFile                        = { fg = c.method },
         NeogitChangeUnmerged                       = { fg = c.namespace },
-
     }
 end
 
