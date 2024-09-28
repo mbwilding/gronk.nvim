@@ -88,6 +88,7 @@ function M.setup(colors, opts)
     local groups = {
         neovim = true,
         language = true,
+        -- TODO: Detect languages based on available LSP
         language_csharp = true,
         language_rust = true,
     }
