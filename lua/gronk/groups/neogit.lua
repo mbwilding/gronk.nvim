@@ -20,7 +20,7 @@ function M.get(c, opts)
         NeogitTagDistance        = { fg = c.number },
         NeogitStatusHEAD         = { fg = c.fg },
 
-        NeogitSubtleText         = { fg = c.number },
+        NeogitSubtleText         = { fg = c.keyword },
 
         NeogitSectionHeader      = { fg = c.module },
         NeogitSectionHeaderCount = { fg = c.number },
