@@ -40,6 +40,11 @@ function M.get(c, opts)
         NeogitDiffContext          = { fg = c.fg, bg = c.bg },
         NeogitDiffAdd              = { fg = c.good },
         NeogitDiffDelete           = { fg = c.error },
+
+        NeogitSignatureGood        = { fg = c.good },
+        NeogitSignatureBad         = { fg = c.error },
+        NeogitSignatureMissing     = { fg = c.warn },
+        NeogitSignatureNone        = { fg = c.redundant },
     }
 end
 
