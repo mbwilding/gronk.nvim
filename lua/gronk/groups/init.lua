@@ -5,7 +5,7 @@ local M = {}
 
 M.plugins = {
     ["lazy.nvim"] = "lazy",
-    ["neogit"]                        = "neogit",
+    ["neogit"]    = "neogit",
     ["nvim-cmp"]  = "cmp",
     -- ["aerial.nvim"]                   = "aerial",
     -- ["ale"]                           = "ale",
