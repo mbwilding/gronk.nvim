@@ -4,20 +4,20 @@ local Util = require("gronk.util")
 local M = {}
 
 M.plugins = {
-    ["copilot.nvim"]            = "copilot",
-    ["lazy.nvim"]               = "lazy",
-    ["lsp-lens.nvim"]           = "lsp-lens",
-    ["markview.nvim"]           = "markview",
-    ["mason.nvim"]              = "mason",
-    ["neogit"]                  = "neogit",
-    ["noice.nvim"]              = "noice",
-    ["nvim-cmp"]                = "cmp",
-    ["nvim-dap"]                = "dap",
-    ["nvim-notify"]             = "notify",
+    ["copilot.nvim"] = "copilot",
+    ["lazy.nvim"] = "lazy",
+    ["lsp-lens.nvim"] = "lsp-lens",
+    ["markview.nvim"] = "markview",
+    ["mason.nvim"] = "mason",
+    ["neogit"] = "neogit",
+    ["noice.nvim"] = "noice",
+    ["nvim-cmp"] = "cmp",
+    ["nvim-dap"] = "dap",
+    ["nvim-notify"] = "notify",
     ["nvim-treesitter-context"] = "treesitter-context",
-    ["oil.nvim"]                = "oil",
-    ["telescope.nvim"]          = "telescope",
-    ["which-key.nvim"]          = "which-key",
+    ["oil.nvim"] = "oil",
+    ["telescope.nvim"] = "telescope",
+    ["which-key.nvim"] = "which-key",
 
     ---- Reference
     -- ["aerial.nvim"]                   = "aerial",

@@ -1,7 +1,7 @@
 local M = {}
 
 M.defaults = {
-    style = "rider",    -- The theme comes in two styles, `rider` and `wilding`
+    style = "rider", -- The theme comes in two styles, `rider` and `wilding`
     transparent = true, -- Enable this to disable setting the background color
     plugins = {
         -- enable all plugins when not using lazy.nvim
