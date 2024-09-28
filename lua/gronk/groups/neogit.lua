@@ -9,7 +9,7 @@ function M.get(c, opts)
         -- NeogitDiffAddHighlight     = { fg = c.good, bg = c.bg },
 
         NeogitBranch             = { fg = c.macro },
-        NeogitBranchHead         = { fg = c.interface },
+        NeogitBranchHead         = { fg = c.struct },
         NeogitRemote             = { fg = c.struct },
         NeogitObjectId           = { fg = c.string },
         NeogitHead               = { fg = c.keyword },
