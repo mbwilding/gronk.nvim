@@ -1,0 +1,30 @@
+return {
+	-- Default
+	fg = "#d4a82b",
+	bg = "#ffcc00",
+	window_bg = "#ff0000",
+	window_accent = "#660000",
+
+	   -- Code
+	attribute = "#c9cba3",
+	comment = "#7d6608",
+	constant = "#bfcde0",
+	delimiter = "#d4a82b",
+	enum = "#ff8c00",
+	error = "#dc143c",
+	escape = "#c9cba3",
+	hint = "#696969",
+	interface = "#a0522d",
+	keyword = "#ff4500",
+	macro = "#ff6347",
+	member = "#bfcde0",
+	method = "#ffa500",
+	module = "#ffd700",
+	namespace = "#ff8c00",
+	number = "#c9cba3",
+	operator = "#d4a82b",
+	redundant = "#778899",
+	string = "#fffacd",
+	struct = "#ff8c00",
+	variable = "#ffcc00",
+}
