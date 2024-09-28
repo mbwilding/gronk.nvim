@@ -81,16 +81,6 @@ function M.get(c, opts)
         CmpItemKindText                            = { fg = c.fg, bg = c.none },
         CmpItemKindVariable                        = { fg = c.variable, bg = c.none },
 
-        -- Lazy
-        LazyButton                                 = { fg = c.fg, bg = c.window_accent },
-        LazyButtonActive                           = { fg = c.bg, bg = c.macro },
-        LazyComment                                = { fg = c.comment },
-        LazyH1                                     = { fg = c.bg, bg = c.macro },
-        LazyProp                                   = { fg = c.macro },
-        LazyReasonPlugin                           = { fg = c.comment },
-        LazySpecial                                = { fg = c.macro },
-        Title                                      = { fg = c.macro },
-
         -- Treesitter Context
         TreesitterContext                          = { bg = c.bg, link = c.none },
         TreesitterContentLineNumber                = { bg = c.bg, link = c.none },
