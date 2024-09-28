@@ -4,9 +4,9 @@ function M.get(c, opts)
     return {
         NeogitBranch               = { fg = c.macro },
         NeogitRemote               = { fg = c.struct },
-        NeogitHunkHeader           = { fg = c.fg, bg = c.bg },
-        NeogitHunkHeaderHighlight  = { fg = c.fg, bg = c.bg },
-        NeogitDiffContextHighlight = { fg = c.fg, bg = c.bg },
+        -- NeogitHunkHeader           = { fg = c.fg, bg = c.bg },
+        -- NeogitHunkHeaderHighlight  = { fg = c.fg, bg = c.bg },
+        -- NeogitDiffContextHighlight = { fg = c.fg, bg = c.bg },
         NeogitDiffDeleteHighlight  = { fg = c.error, bg = c.bg },
         NeogitDiffAddHighlight     = { fg = c.good, bg = c.bg },
 
