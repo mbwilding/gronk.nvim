@@ -17,7 +17,7 @@ function M.get(c, opts)
         NeogitRebaseDone              = { fg = c.good },
         NeogitTagName                 = { fg = c.comment },
         NeogitTagDistance             = { fg = c.number },
-        NeogitStatusHEAD              = { fg = c.fg },
+        NeogitStatusHEAD              = { fg = c.macro },
 
         NeogitSubtleText              = { fg = c.keyword },
 
