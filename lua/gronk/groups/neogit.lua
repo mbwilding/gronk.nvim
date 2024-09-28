@@ -6,7 +6,7 @@ function M.get(c, opts)
         NeogitRemote               = { fg = c.struct },
         -- NeogitHunkHeader           = { bg = c.window_accent, fg = c.fg },
         -- NeogitHunkHeaderHighlight  = { bg = c.redundant, fg = c.keyword },
-        -- NeogitDiffContextHighlight = { bg = c.bg, fg = c.fg },
+        NeogitDiffContextHighlight = { bg = c.interface, fg = c.error },
         NeogitDiffDeleteHighlight  = { fg = c.fg, bg = c.error },
         NeogitDiffAddHighlight     = { fg = c.fg, bg = c.good },
 
