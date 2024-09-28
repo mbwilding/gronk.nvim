@@ -1,5 +1,6 @@
 return {
 	-- Default UI
+    none = "NONE",
 	fg = "#bdbdbd",
 	bg = "#000000",
 	window_bg = "#101010",

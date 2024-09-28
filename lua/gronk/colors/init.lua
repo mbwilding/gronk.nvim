@@ -17,8 +17,6 @@ function M.setup(opts)
     -- Color Palette
     local colors = palette
 
-    colors.none = "NONE"
-
     -- Transparency
     if opts.transparent then
         colors.bg = colors.none
