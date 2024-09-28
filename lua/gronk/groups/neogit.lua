@@ -33,7 +33,7 @@ function M.get(c, opts)
         NeogitChangeNewFile           = { fg = c.good },
         NeogitChangeUnmerged          = { fg = c.redundant },
 
-        -- NeogitHunkHeader      = { fg = c.fg, bg = c.bg },
+        -- NeogitHunkHeader           = { fg = c.fg, bg = c.bg },
         NeogitDiffAdditions           = { fg = c.good },
         NeogitDiffDeletions           = { fg = c.error },
 
