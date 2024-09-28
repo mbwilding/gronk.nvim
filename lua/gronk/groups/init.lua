@@ -86,8 +86,8 @@ end
 
 function M.setup(colors, opts)
     local groups = {
-        base = true,
-        language_base = true,
+        neovim = true,
+        language = true,
         language_csharp = true,
         language_rust = true,
     }
