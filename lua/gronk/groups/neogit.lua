@@ -2,10 +2,10 @@ local M = {}
 
 function M.get(c, opts)
     return {
-        -- NeogitHunkHeaderHighlight  = { fg = c.fg, bg = c.bg },
-        -- NeogitDiffContextHighlight = { fg = c.fg, bg = c.bg },
-        -- NeogitDiffDeleteHighlight  = { fg = c.error, bg = c.bg },
-        -- NeogitDiffAddHighlight     = { fg = c.good, bg = c.bg },
+        NeogitHunkHeaderHighlight  = { fg = c.fg, bg = c.bg },
+        NeogitDiffContextHighlight = { fg = c.fg, bg = c.bg },
+        NeogitDiffDeleteHighlight  = { fg = c.error, bg = c.bg },
+        NeogitDiffAddHighlight     = { fg = c.good, bg = c.bg },
 
         NeogitBranch             = { fg = c.macro },
         NeogitBranchHead         = { fg = c.struct },
