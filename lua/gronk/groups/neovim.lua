@@ -8,8 +8,9 @@ function M.get(c, opts)
         CursorIM = { fg = c.fg, bg = c.bg },               -- Character under the cursor in IME mode
         CursorLine = { fg = c.keyword, bg = c.none },      -- Screen line at the cursor
         CursorLineNr = { fg = c.redundant, bg = c.none },  -- Unknown
+        DiagnosticUnderlineError = { bg = c.error },
+        DiagnosticUnderlineWarn = { bg = c.warn },
         DiagnosticUnnecessary = { fg = c.redundant },
-        DiagnosticUnderlineError = { fg = c.error },
         DiffAdd = { fg = c.good },                       -- Diff add
         DiffChange = { fg = c.warn },                    -- Diff change
         DiffDelete = { fg = c.error },                   -- Diff delete
