@@ -2,7 +2,6 @@ local M = {}
 
 function M.get(c, opts)
     return {
-        -- NeogitHunkHeader           = { fg = c.fg, bg = c.bg },
         -- NeogitHunkHeaderHighlight  = { fg = c.fg, bg = c.bg },
         -- NeogitDiffContextHighlight = { fg = c.fg, bg = c.bg },
         -- NeogitDiffDeleteHighlight  = { fg = c.error, bg = c.bg },
@@ -33,6 +32,10 @@ function M.get(c, opts)
         NeogitChangeCopied       = { fg = c.good },
         NeogitChangeNewFile      = { fg = c.good },
         NeogitChangeUnmerged     = { fg = c.redundant },
+
+        -- NeogitHunkHeader      = { fg = c.fg, bg = c.bg },
+        NeogitDiffAdditions      = { fg = c.good },
+        NeogitDiffDeletions      = { fg = c.error },
     }
 end
 
