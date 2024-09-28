@@ -4,11 +4,17 @@ local Util = require("gronk.util")
 local M = {}
 
 M.plugins = {
-    -- Plugins
-    ["lazy.nvim"]     = "lazy",
-    ["markview.nvim"] = "markview",
-    ["neogit"]        = "neogit",
-    ["nvim-cmp"]      = "cmp",
+    ["copilot.nvim"]            = "copilot",
+    ["lazy.nvim"]               = "lazy",
+    ["markview.nvim"]           = "markview",
+    ["mason.nvim"]              = "mason",
+    ["neogit"]                  = "neogit",
+    ["nvim-cmp"]                = "cmp",
+    ["nvim-dap"]                = "dap",
+    ["nvim-treesitter-context"] = "treesitter-context",
+    ["oil.nvim"]                = "oil",
+    ["telescope.nvim"]          = "telescope",
+    ["which-key.nvim"]          = "which-key",
 
     ---- Reference
     -- ["aerial.nvim"]                   = "aerial",
@@ -51,23 +57,19 @@ M.plugins = {
     -- ["neo-tree.nvim"]                 = "neo-tree",
     -- ["neotest"]                       = "neotest",
     -- ["noice.nvim"]                    = "noice",
-    -- ["nvim-dap"]                      = "dap",
     -- ["nvim-navic"]                    = "navic",
     -- ["nvim-notify"]                   = "notify",
     -- ["nvim-scrollbar"]                = "scrollbar",
     -- ["nvim-tree.lua"]                 = "nvim-tree",
-    -- ["nvim-treesitter-context"]       = "treesitter-context",
     -- ["octo.nvim"]                     = "octo",
     -- ["rainbow-delimiters.nvim"]       = "rainbow",
     -- ["render-markdown.nvim"]          = "render-markdown",
-    -- ["telescope.nvim"]                = "telescope",
     -- ["trouble.nvim"]                  = "trouble",
     -- ["vim-gitgutter"]                 = "gitgutter",
     -- ["vim-glyph-palette"]             = "glyph-palette",
     -- ["vim-illuminate"]                = "illuminate",
     -- ["vim-sneak"]                     = "sneak",
     -- ["vimwiki"]                       = "vimwiki",
-    -- ["which-key.nvim"]                = "which-key",
     -- ["yanky.nvim"]                    = "yanky"
 }
 
@@ -81,7 +83,7 @@ end
 
 function M.get(name, colors, opts)
     -- TODO: For debugging what is loaded
-    -- print(name)
+    print(name)
     local mod = M.get_group(name)
     return mod.get(colors, opts)
 end
