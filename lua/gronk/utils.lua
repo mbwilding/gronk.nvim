@@ -11,7 +11,9 @@ function M.mod(modname)
   if package.loaded[modname] then
     return package.loaded[modname]
   end
-  local ret = loadfile(me .. "/" .. modname:gsub("%.", "/") .. ".lua")()
+  local path = me .. "/" .. modname:gsub("%.", "/") .. ".lua"
+  print(path)
+  local ret = loadfile(path)()
   package.loaded[modname] = ret
   return ret
 end
