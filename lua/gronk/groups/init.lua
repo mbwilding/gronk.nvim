@@ -80,6 +80,8 @@ function M.get_group(name)
 end
 
 function M.get(name, colors, opts)
+    -- TODO: For debugging what is loaded
+    -- print(name)
     local mod = M.get_group(name)
     return mod.get(colors, opts)
 end

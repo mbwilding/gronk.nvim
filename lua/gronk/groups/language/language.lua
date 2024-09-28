@@ -1,7 +1,6 @@
 local M = {}
 
 function M.get(c)
-    print("YAY")
     return {
         Comment                                    = { fg = c.comment },
         Delimiter                                  = { fg = c.delimiter },
