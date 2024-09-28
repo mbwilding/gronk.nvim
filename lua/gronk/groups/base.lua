@@ -140,17 +140,6 @@ function M.get(c, opts)
         ["@string.escape"]                         = { fg = c.escape },
         ["@variable"]                              = { fg = c.variable },
         ["@variable.member"]                       = { fg = c.member },
-
-        -- Rust
-        ["@lsp.mod.declaration.rust"]              = { fg = c.fg },
-        ["@lsp.mod.mutable"]                       = { underline = true },
-        ["@lsp.mod.unsafe"]                        = { fg = c.error },
-        ["@lsp.typemod.interface.declaration"]     = { fg = c.interface },
-        ["@lsp.typemod.namespace.crateRoot"]       = { fg = c.namespace },
-        ["@type.qualifier.rust"]                   = { fg = c.keyword, underline = true },
-
-        -- CSharp
-        ["@lsp.type.stringEscapeCharacter.cs"]     = { fg = c.escape },
     }
 end
 

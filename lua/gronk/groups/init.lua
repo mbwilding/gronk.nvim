@@ -4,10 +4,17 @@ local Util = require("gronk.util")
 local M = {}
 
 M.plugins = {
-    ["lazy.nvim"] = "lazy",
-    ["markview"]  = "markview",
-    ["neogit"]    = "neogit",
-    ["nvim-cmp"]  = "cmp",
+    -- Plugins
+    ["lazy.nvim"] = "plugins/lazy",
+    ["markview"]  = "plugins/markview",
+    ["neogit"]    = "plugins/neogit",
+    ["nvim-cmp"]  = "plugins/cmp",
+
+    -- Languages
+    ["csharp"]    = "languages/csharp",
+    ["rust"]      = "languages/rust",
+
+    ---- Reference
     -- ["aerial.nvim"]                   = "aerial",
     -- ["ale"]                           = "ale",
     -- ["alpha-nvim"]                    = "alpha",
