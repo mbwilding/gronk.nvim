@@ -17,4 +17,16 @@ function M.mod(modname)
   return ret
 end
 
+function M.resolve(groups)
+  for _, hl in pairs(groups) do
+    if type(hl.style) == "table" then
+      for k, v in pairs(hl.style) do
+        hl[k] = v
+      end
+      hl.style = nil
+    end
+  end
+  return groups
+end
+
 return M
