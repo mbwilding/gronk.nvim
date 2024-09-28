@@ -1,10 +1,10 @@
-local Util = require("gronk.util")
+local utils = require("gronk.utils")
 
 local M = {}
 
 M.styles = setmetatable({}, {
     __index = function(_, style)
-    return vim.deepcopy(Util.mod("gronk.colors." .. style))
+    return vim.deepcopy(utils.mod("gronk.colors." .. style))
     end,
 })
 
