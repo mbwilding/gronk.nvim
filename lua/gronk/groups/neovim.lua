@@ -9,11 +9,21 @@ function M.get(c, opts)
         CursorLine = { fg = c.keyword, bg = c.none },      -- Screen line at the cursor
         CursorLineNr = { fg = c.redundant, bg = c.none },  -- Unknown
         DiagnosticError = { fg = c.error },
-        DiagnosticWarn = { fg = c.warn },
-        DiagnosticInfo = { fg = c.warn },
+        DiagnosticHint = { fg = c.hint },
+        DiagnosticInfo = { fg = c.info },
+        DiagnosticOk = { fg = c.ok },
         DiagnosticUnderlineError = { underline = true, sp = c.error },
+        DiagnosticUnderlineHint = { underline = true, sp = c.hint },
+        DiagnosticUnderlineInfo = { underline = true, sp = c.info },
+        DiagnosticUnderlineOk = { underline = true, sp = c.ok },
         DiagnosticUnderlineWarn = { underline = true, sp = c.warn },
         DiagnosticUnnecessary = { fg = c.redundant },
+        DiagnosticVirtualTextError = { fg = c.error },
+        DiagnosticVirtualTextHint = { fg = c.hint },
+        DiagnosticVirtualTextInfo = { fg = c.info },
+        DiagnosticVirtualTextOk = { fg = c.ok },
+        DiagnosticVirtualTextWarn = { fg = c.warn },
+        DiagnosticWarn = { fg = c.warn },
         DiffAdd = { fg = c.ok },                         -- Diff add
         DiffChange = { fg = c.warn },                    -- Diff change
         DiffDelete = { fg = c.error },                   -- Diff delete
