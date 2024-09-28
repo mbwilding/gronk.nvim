@@ -7,8 +7,8 @@ function M.get(c, opts)
         -- NeogitHunkHeader           = { fg = c.fg, bg = c.window_accent },
         -- NeogitHunkHeaderHighlight  = { fg = c.keyword, bg = c.redundant },
         NeogitDiffContextHighlight = { fg = c.fg, bg = c.bg },
-        NeogitDiffDeleteHighlight  = { fg = c.fg, bg = c.error },
-        NeogitDiffAddHighlight     = { fg = c.fg, bg = c.good },
+        NeogitDiffDeleteHighlight  = { fg = c.error, bg = c.bg },
+        NeogitDiffAddHighlight     = { fg = c.good, bg = c.bg },
 
         NeogitChangeAdded          = { fg = c.good },
         NeogitChangeDeleted        = { fg = c.error },
