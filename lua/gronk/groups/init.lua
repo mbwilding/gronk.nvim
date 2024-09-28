@@ -147,7 +147,6 @@ function M.setup(colors, opts)
       Util.cache.write(cache_key, { groups = ret, inputs = inputs })
     end
   end
-  opts.on_highlights(ret, colors)
 
   return ret, groups
 end
