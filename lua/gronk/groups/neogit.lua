@@ -37,6 +37,7 @@ function M.get(c, opts)
         NeogitDiffAdditions        = { fg = c.good },
         NeogitDiffDeletions        = { fg = c.error },
 
+        NeogitDiffContext          = { fg = c.fg, bg = c.bg },
         NeogitDiffAdd              = { fg = c.good },
         NeogitDiffDelete           = { fg = c.error },
     }
