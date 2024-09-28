@@ -8,10 +8,13 @@ function M.get(c, opts)
         CursorIM = { fg = c.fg, bg = c.bg },               -- Character under the cursor in IME mode
         CursorLine = { fg = c.keyword, bg = c.none },      -- Screen line at the cursor
         CursorLineNr = { fg = c.redundant, bg = c.none },  -- Unknown
+        DiagnosticError = { fg = c.error },
+        DiagnosticWarn = { fg = c.warn },
+        DiagnosticInfo = { fg = c.warn },
         DiagnosticUnderlineError = { underline = true, sp = c.error },
         DiagnosticUnderlineWarn = { underline = true, sp = c.warn },
         DiagnosticUnnecessary = { fg = c.redundant },
-        DiffAdd = { fg = c.good },                       -- Diff add
+        DiffAdd = { fg = c.ok },                         -- Diff add
         DiffChange = { fg = c.warn },                    -- Diff change
         DiffDelete = { fg = c.error },                   -- Diff delete
         Directory = { fg = c.namespace },
@@ -22,7 +25,7 @@ function M.get(c, opts)
         LineNr = { fg = c.redundant, bg = c.none },      -- Current line number
         LineNrAbove = { fg = c.redundant, bg = c.none }, -- Above current line numbers
         LineNrBelow = { fg = c.redundant, bg = c.none }, -- Below current line numbers
-        LspInlayHint = { fg = c.hint },
+        LspInlayHint = { fg = c.inlay },
         MatchParen = { bg = c.namespace },               -- Matching pair highlight
         Normal = { fg = c.fg, bg = c.bg },               -- Current window
         NormalFloat = { fg = c.fg, bg = c.window_bg },   -- Normal text in floating windows
@@ -38,7 +41,7 @@ function M.get(c, opts)
         WinBarNC = { fg = c.fg, bg = c.window_bg },
         WinSeparator = { fg = c.bg, bg = c.none }, -- Window border
         healthError = { fg = c.error },
-        healthSuccess = { fg = c.good },
+        healthSuccess = { fg = c.ok },
         healthWarning = { fg = c.warn },
         lCursor = { fg = c.fg, bg = c.macro }, -- Character under the cursor when `language-mapping`
     }

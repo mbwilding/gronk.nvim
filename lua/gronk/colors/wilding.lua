@@ -12,7 +12,6 @@ return {
     delimiter = "#bdbdbd",
     enum = "#c191ff",
     escape = "#ed94c0",
-    hint = "#4f5258",
     interface = "#9591ff",
     keyword = "#6c95eb",
     macro = "#4eade5",
@@ -27,8 +26,11 @@ return {
     struct = "#c191ff",
     variable = "#bdbdbd",
 
-    --Other
-    good = "#39cc8f",
+    -- Other
+    ok = "#39cc8f",
+    info = "#4eade5",
+    hint = "#66c3cc",
     warn = "#ffb083",
     error = "#ff3333",
+    inlay = "#4f5258",
 }
