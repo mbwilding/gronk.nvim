@@ -13,7 +13,7 @@ return {
     enum = "#bdbdbd",
     escape = "#bdbdbd",
     interface = "#bdbdbd",
-    keyword = "#bdbdbd",
+    keyword = "#eb6c98",
     macro = "#bdbdbd",
     member = "#bdbdbd",
     method = "#bdbdbd",
