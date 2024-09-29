@@ -17,7 +17,7 @@ return {
     macro = "#4eade5",
     member = "#66c3cc",
     method = "#39cc8f",
-    module = "#ffd3b3",
+    module = "#ffc794",
     namespace = "#ffb083",
     number = "#ed94c0",
     operator = "#bdbdbd",
@@ -31,6 +31,6 @@ return {
     info = "#4eade5",
     hint = "#66c3cc",
     warn = "#ffb083",
-    error = "#ff3333",
+    error = "#ff4747",
     inlay = "#4f5258",
 }
