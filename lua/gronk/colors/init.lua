@@ -2,12 +2,16 @@ local Util = require("gronk.util")
 
 local M = {}
 
-M.colors = require("gronk.colors." .. vim.g.colors_name:match("([^%-]+)$"))
+M.styles = setmetatable({}, {
+    __index = function(_, style)
+        return vim.deepcopy(Util.mod("gronk.colors." .. style))
+    end,
+})
 
 function M.setup(opts)
     opts = require("gronk.config").extend(opts)
 
-    local palette = Util.mod("gronk.colors." .. opts.style)
+    local palette = M.styles[opts.style]
     if type(palette) == "function" then
         palette = palette(opts)
     end
