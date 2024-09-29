@@ -46,6 +46,7 @@ function M.get(c)
         ["@lsp.typemod.typeParameter.declaration"] = { fg = c.struct },
         ["@lsp.typemod.variable"] = { fg = c.variable },
         ["@module"] = { fg = c.namespace },
+        ["@string.documentation"] = { fg = c.comment },
         ["@string.escape"] = { fg = c.escape },
         ["@variable"] = { fg = c.variable },
         ["@variable.member"] = { fg = c.member },
