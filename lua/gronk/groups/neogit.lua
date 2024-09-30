@@ -38,8 +38,8 @@ function M.get(c, opts)
         NeogitDiffDeletions           = { fg = c.error },
 
         NeogitDiffContext             = { fg = c.fg },
-        NeogitDiffAdd                 = { bg = c.ok },
-        NeogitDiffDelete              = { bg = c.error },
+        NeogitDiffAdd                 = { bg = c.ok, fg = c.black },
+        NeogitDiffDelete              = { bg = c.error, fg = c.black },
 
         NeogitSignatureGood           = { fg = c.ok },
         NeogitSignatureGoodUnknown    = { fg = c.ok },
