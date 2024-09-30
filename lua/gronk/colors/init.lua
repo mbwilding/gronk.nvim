@@ -18,6 +18,8 @@ function M.setup(opts)
 
     -- Color Palette
     local colors = palette
+    colors.black = "#000000"
+    colors.white = "#ffffff"
 
     -- Transparency
     if opts.transparent then
