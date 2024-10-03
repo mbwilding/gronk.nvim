@@ -5,6 +5,7 @@ local M = {}
 
 M.plugins = {
     ["copilot.nvim"] = "copilot",
+    ["dashboard-nvim"] = "dashboard",
     ["lazy.nvim"] = "lazy",
     ["lsp-lens.nvim"] = "lsp-lens",
     ["markview.nvim"] = "markview",
@@ -25,7 +26,6 @@ M.plugins = {
     -- ["alpha-nvim"]                    = "alpha",
     -- ["barbar.nvim"]                   = "barbar"
     -- ["bufferline.nvim"]               = "bufferline",
-    -- ["dashboard-nvim"]                = "dashboard",
     -- ["flash.nvim"]                    = "flash",
     -- ["fzf-lua"]                       = "fzf",
     -- ["gitsigns.nvim"]                 = "gitsigns",
