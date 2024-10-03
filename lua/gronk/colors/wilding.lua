@@ -24,7 +24,7 @@ return {
     redundant = "#787878",
     string = "#c9a26d",
     struct = "#c191ff",
-    variable = "#bfdbff",
+    variable = "#d9d9d9",
 
     -- Other
     ok = "#39cc8f",
