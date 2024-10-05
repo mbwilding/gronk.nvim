@@ -20,11 +20,11 @@ return {
     module = "#ffc794",
     namespace = "#ffb083",
     number = "#ed94c0",
-    operator = "#a6a6a6",
+    operator = "#bdbdbd",
     redundant = "#787878",
     string = "#c9a26d",
     struct = "#c191ff",
-    variable = "#bdbdbd",
+    variable = "#fbffba",
 
     -- Other
     ok = "#39cc8f",
