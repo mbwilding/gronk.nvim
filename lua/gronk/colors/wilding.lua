@@ -8,7 +8,7 @@ return {
     -- Code
     attribute = "#ed94c0",
     comment = "#85c46c",
-    constant = "#66c3cc",
+    constant = "#83f1ff",
     delimiter = "#a4a4a4",
     enum = "#c191ff",
     escape = "#ed94c0",
@@ -20,11 +20,11 @@ return {
     module = "#ffc794",
     namespace = "#ffb083",
     number = "#ed94c0",
-    operator = "#bdbdbd",
+    operator = "#eeeeee",
     redundant = "#787878",
     string = "#c9a26d",
     struct = "#c191ff",
-    variable = "#fbffba",
+    variable = "#edeecf",
 
     -- Other
     ok = "#39cc8f",
