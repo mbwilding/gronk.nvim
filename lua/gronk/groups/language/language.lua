@@ -24,6 +24,7 @@ function M.get(c)
         ["@lsp.mod.library"] = { fg = c.module },
         ["@lsp.mod.mutable"] = { underline = true },
         ["@lsp.mod.unsafe"] = { fg = c.error },
+        ["@lsp.type.builtinType"] = { fg = c.keyword },
         ["@lsp.type.fieldName"] = { fg = c.member },
         ["@lsp.type.formatSpecifier"] = { fg = c.struct },
         ["@lsp.type.interface"] = { fg = c.interface },
