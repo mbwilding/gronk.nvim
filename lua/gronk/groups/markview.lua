@@ -7,8 +7,8 @@ function M.get(c, opts)
         MarkviewCodeInfo = { bg = c.window_bg },
 
         -- Headings
-        MarkviewHeading1Sign = { fg = c.attribute },
-        MarkviewHeading1 = { fg = c.attribute },
+        MarkviewHeading1Sign = { fg = c.error, bg = c.attribute },
+        MarkviewHeading1 = { fg = c.error, bg = c.attribute },
         MarkviewHeading2Sign = { fg = c.bg, bg = c.namespace },
         MarkviewHeading2 = { fg = c.bg, bg = c.namespace },
         MarkviewHeading3Sign = { fg = c.bg, bg = c.module },
