@@ -18,7 +18,7 @@ function M.get(c, opts)
         MarkviewHeading5Sign = { fg = c.macro },
         MarkviewHeading5 = { fg = c.black, bg = c.macro, bold = true },
         MarkviewHeading6Sign = { fg = c.struct },
-        MarkviewHeading6 = { fg = c.black, bg = c.struct, style = "bold" },
+        MarkviewHeading6 = { fg = c.black, bg = c.struct, bold = true },
     }
 end
 
