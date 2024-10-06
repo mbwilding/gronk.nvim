@@ -7,18 +7,18 @@ function M.get(c, opts)
         MarkviewCodeInfo = { bg = c.window_bg },
 
         -- Headings
-        MarkviewHeading1Sign = { bg = c.attribute },
-        MarkviewHeading1 = { bg = c.attribute },
-        MarkviewHeading2Sign = { bg = c.namespace },
-        MarkviewHeading2 = { bg = c.namespace },
-        MarkviewHeading3Sign = { bg = c.module },
-        MarkviewHeading3 = { bg = c.module },
-        MarkviewHeading4Sign = { bg = c.method },
-        MarkviewHeading4 = { bg = c.method },
-        MarkviewHeading5Sign = { bg = c.macro },
-        MarkviewHeading5 = { bg = c.macro },
-        MarkviewHeading6Sign = { bg = c.struct },
-        MarkviewHeading6 = { bg = c.struct },
+        MarkviewHeading1Sign = { fg = c.fg, bg = c.attribute },
+        MarkviewHeading1 = { fg = c.fg, bg = c.attribute },
+        MarkviewHeading2Sign = { fg = c.fg, bg = c.namespace },
+        MarkviewHeading2 = { fg = c.fg, bg = c.namespace },
+        MarkviewHeading3Sign = { fg = c.fg, bg = c.module },
+        MarkviewHeading3 = { fg = c.fg, bg = c.module },
+        MarkviewHeading4Sign = { fg = c.fg, bg = c.method },
+        MarkviewHeading4 = { fg = c.fg, bg = c.method },
+        MarkviewHeading5Sign = { fg = c.fg, bg = c.macro },
+        MarkviewHeading5 = { fg = c.fg, bg = c.macro },
+        MarkviewHeading6Sign = { fg = c.fg, bg = c.struct },
+        MarkviewHeading6 = { fg = c.fg, bg = c.struct },
     }
 end
 
