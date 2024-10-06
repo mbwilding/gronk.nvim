@@ -8,15 +8,15 @@ function M.get(c, opts)
 
         -- Headings
         MarkviewHeading1Sign = { fg = c.attribute },
-        MarkviewHeading1 = { fg = c.black, bg = c.attribute, style = "bold" },
+        MarkviewHeading1 = { fg = c.black, bg = c.attribute, bold = true },
         MarkviewHeading2Sign = { fg = c.namespace },
-        MarkviewHeading2 = { fg = c.black, bg = c.namespace, style = "bold" },
+        MarkviewHeading2 = { fg = c.black, bg = c.namespace, bold = true },
         MarkviewHeading3Sign = { fg = c.module },
-        MarkviewHeading3 = { fg = c.black, bg = c.module, style = "bold" },
+        MarkviewHeading3 = { fg = c.black, bg = c.module, bold = true },
         MarkviewHeading4Sign = { fg = c.method },
-        MarkviewHeading4 = { fg = c.black, bg = c.method, style = "bold" },
+        MarkviewHeading4 = { fg = c.black, bg = c.method, bold = true },
         MarkviewHeading5Sign = { fg = c.macro },
-        MarkviewHeading5 = { fg = c.black, bg = c.macro, style = "bold" },
+        MarkviewHeading5 = { fg = c.black, bg = c.macro, bold = true },
         MarkviewHeading6Sign = { fg = c.struct },
         MarkviewHeading6 = { fg = c.black, bg = c.struct, style = "bold" },
     }
