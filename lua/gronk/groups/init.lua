@@ -6,6 +6,7 @@ local M = {}
 M.plugins = {
     ["copilot.nvim"] = "copilot",
     ["dashboard-nvim"] = "dashboard",
+    ["kubectl.nvim"] = "kubectl",
     ["lazy.nvim"] = "lazy",
     ["lsp-lens.nvim"] = "lsp-lens",
     ["markview.nvim"] = "markview",
