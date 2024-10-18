@@ -8,7 +8,7 @@ function M.get(c, opts)
         KubectlInfo = { fg = c.info },
         KubectlDebug = { fg = c.module },
         KubectlSuccess = { fg = c.ok },
-        KubectlPending = { fg = c.interface },
+        KubectlPending = { fg = c.string },
         KubectlDeprecated = { fg = c.redundant },
         KubectlExperimental = { fg = c.namespace },
         KubectlNote = { fg = c.hint },
