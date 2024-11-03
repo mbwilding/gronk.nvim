@@ -54,6 +54,7 @@ function M.get(c, opts)
         healthSuccess = { fg = c.ok },
         healthWarning = { fg = c.warn },
         lCursor = { fg = c.fg, bg = c.macro }, -- Character under the cursor when `language-mapping`
+        ["@lsp.type.enum"] = { fg = c.enum },
     }
 end
 
