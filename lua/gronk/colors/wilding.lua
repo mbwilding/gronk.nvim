@@ -10,7 +10,7 @@ return {
     comment = "#85c46c",
     constant = "#83f1ff",
     delimiter = "#a4a4a4",
-    enum = "#c191ff",
+    enum = "#fbff91",
     escape = "#ed94c0",
     interface = "#9591ff",
     keyword = "#6c95eb",
