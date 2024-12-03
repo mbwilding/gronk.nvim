@@ -4,6 +4,7 @@ local Util = require("gronk.util")
 local M = {}
 
 M.plugins = {
+    ["blink.cmp"] = "blink",
     ["copilot.nvim"] = "copilot",
     ["dashboard-nvim"] = "dashboard",
     ["kubectl.nvim"] = "kubectl",
