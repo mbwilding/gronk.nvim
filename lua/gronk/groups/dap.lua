@@ -7,7 +7,8 @@ function M.get(c, opts)
         DapBreakpoint = { fg = c.error },
         DapLogPoint = { fg = c.error },
         DapStoppedLine = { bg = c.error },
-        NvimDapVirtualText = { fg = c.error },
+        NvimDapVirtualText = { fg = c.inlay },
+        NvimDapVirtualTextChanged = { fg = c.warn },
     }
 end
 
