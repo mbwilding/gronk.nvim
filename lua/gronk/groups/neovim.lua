@@ -3,11 +3,11 @@ local M = {}
 function M.get(c, opts)
     return {
         ColorColumn = { fg = c.fg, bg = c.window_accent }, -- Columns set with `colorcolumn`
-        Conceal = { fg = c.redundant, bg = c.none },       -- Grayed out
-        Cursor = { fg = c.fg, bg = c.macro },              -- Character under the cursor
-        CursorIM = { fg = c.fg, bg = c.bg },               -- Character under the cursor in IME mode
-        CursorLine = { fg = c.keyword, bg = c.none },      -- Screen line at the cursor
-        CursorLineNr = { fg = c.redundant, bg = c.none },  -- Unknown
+        Conceal = { fg = c.redundant, bg = c.none }, -- Grayed out
+        Cursor = { fg = c.fg, bg = c.macro }, -- Character under the cursor
+        CursorIM = { fg = c.fg, bg = c.bg }, -- Character under the cursor in IME mode
+        CursorLine = { fg = c.keyword, bg = c.none }, -- Screen line at the cursor
+        CursorLineNr = { fg = c.redundant, bg = c.none }, -- Unknown
         DiagnosticError = { fg = c.error },
         DiagnosticHint = { fg = c.hint },
         DiagnosticInfo = { fg = c.info },
@@ -24,23 +24,23 @@ function M.get(c, opts)
         DiagnosticVirtualTextOk = { fg = c.ok },
         DiagnosticVirtualTextWarn = { fg = c.warn },
         DiagnosticWarn = { fg = c.warn },
-        DiffAdd = { fg = c.ok },                         -- Diff add
-        DiffChange = { fg = c.warn },                    -- Diff change
-        DiffDelete = { fg = c.error },                   -- Diff delete
+        DiffAdd = { fg = c.ok }, -- Diff add
+        DiffChange = { fg = c.warn }, -- Diff change
+        DiffDelete = { fg = c.error }, -- Diff delete
         Directory = { fg = c.namespace },
-        EndOfBuffer = { fg = c.bg },                     -- End of buffer `~`
-        ErrorMsg = { fg = c.error },                     -- Error messages on the commandline
-        Folded = { fg = c.keyword, bg = c.none },        -- Folded gutter
-        IncSearch = { fg = c.bg, bg = c.macro },         -- Yank highlight
-        LineNr = { fg = c.redundant, bg = c.none },      -- Current line number
+        EndOfBuffer = { fg = c.bg }, -- End of buffer `~`
+        ErrorMsg = { fg = c.error }, -- Error messages on the commandline
+        Folded = { fg = c.keyword, bg = c.none }, -- Folded gutter
+        IncSearch = { fg = c.bg, bg = c.macro }, -- Yank highlight
+        LineNr = { fg = c.redundant, bg = c.none }, -- Current line number
         LineNrAbove = { fg = c.redundant, bg = c.none }, -- Above current line numbers
         LineNrBelow = { fg = c.redundant, bg = c.none }, -- Below current line numbers
         LspInlayHint = { fg = c.inlay },
-        MatchParen = { bg = c.namespace },               -- Matching pair highlight
-        Normal = { fg = c.fg, bg = c.bg },               -- Current window
-        NormalFloat = { fg = c.fg, bg = c.window_bg },   -- Normal text in floating windows
-        NormalNC = { fg = c.fg, bg = c.bg },             -- Non-current window
-        NormalSB = { fg = c.fg, bg = c.bg },             -- Normal text in sidebar
+        MatchParen = { bg = c.namespace }, -- Matching pair highlight
+        Normal = { fg = c.fg, bg = c.bg }, -- Current window
+        NormalFloat = { fg = c.fg, bg = c.window_bg }, -- Normal text in floating windows
+        NormalNC = { fg = c.fg, bg = c.bg }, -- Non-current window
+        NormalSB = { fg = c.fg, bg = c.bg }, -- Normal text in sidebar
         Pmenu = { bg = c.window_accent },
         StatusLine = { fg = c.fg, bg = c.bg },
         StatusLineNC = { fg = c.fg, bg = c.bg },
