@@ -1,7 +1,5 @@
 local M = {}
 
-local kinds = require("gronk.groups.kinds")
-
 function M.get(c, opts)
     local highlights = {
         BlinkCmpItemIdx = { fg = c.number },
@@ -21,7 +19,7 @@ function M.get(c, opts)
         -- BlinkCmpSignatureHelpBorder = { fg = c.border_highlight, bg = c.bg_float },
     }
 
-    kinds.merge(c, highlights, "BlinkCmpKind")
+    require("gronk.groups.kinds").merge(c, highlights, "BlinkCmpKind")
 
     return highlights
 end

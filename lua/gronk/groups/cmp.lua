@@ -50,7 +50,7 @@ function M.get(c, opts)
         CmpItemKindVariable      = { fg = c.variable, bg = c.none },
     }
 
-    kinds.merge(c, highlights, "CmpItemKind")
+    require("gronk.groups.kinds").merge(c, highlights, "CmpItemKind")
 
     return highlights
 end
