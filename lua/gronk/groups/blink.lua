@@ -1,10 +1,12 @@
 local M = {}
 
-function M.get(c, opts)
-    return {
-        BlinkCmpItemIdx           = { fg = c.number },
+local kinds = require("gronk.groups.kinds")
 
-        BlinkCmpDoc               = { fg = c.fg, bg = c.none },
+function M.get(c, opts)
+    local highlights = {
+        BlinkCmpItemIdx = { fg = c.number },
+
+        BlinkCmpDoc     = { fg = c.fg, bg = c.none },
         -- BlinkCmpDocBorder           = { fg = c.border_highlight, bg = c.bg_float },
         -- BlinkCmpGhostText           = { fg = c.terminal_black },
         -- BlinkCmpKindCodeium         = { fg = c.teal, bg = c.none },
@@ -17,44 +19,11 @@ function M.get(c, opts)
         -- BlinkCmpMenuBorder          = { fg = c.border_highlight, bg = c.bg_float },
         -- BlinkCmpSignatureHelp       = { fg = c.fg, bg = c.bg_float },
         -- BlinkCmpSignatureHelpBorder = { fg = c.border_highlight, bg = c.bg_float },
-
-        BlinkCmpKindArray         = { fg = c.delimiter, bg = c.none },
-        BlinkCmpKindBoolean       = { fg = c.keyword, bg = c.none },
-        BlinkCmpKindClass         = { fg = c.struct, bg = c.none },
-        BlinkCmpKindColor         = "Special",
-        BlinkCmpKindConstant      = { fg = c.constant, bg = c.none },
-        BlinkCmpKindConstructor   = { fg = c.keyword, bg = c.none },
-        BlinkCmpKindCopilot       = { fg = c.namespace, bg = c.none },
-        BlinkCmpKindDefault       = { fg = c.fg, bg = c.none },
-        BlinkCmpKindEnum          = { fg = c.enum, bg = c.none },
-        BlinkCmpKindEnumMember    = { fg = c.constant, bg = c.none },
-        BlinkCmpKindEvent         = "Special",
-        BlinkCmpKindField         = { fg = c.member, bg = c.none },
-        BlinkCmpKindFile          = { fg = c.macro, bg = c.none },
-        BlinkCmpKindFolder        = { fg = c.namespace, bg = c.none },
-        BlinkCmpKindFunction      = { fg = c.method, bg = c.none },
-        BlinkCmpKindInterface     = { fg = c.interface, bg = c.none },
-        BlinkCmpKindKey           = { fg = c.member, bg = c.none },
-        BlinkCmpKindKeyword       = { fg = c.keyword, bg = c.none },
-        BlinkCmpKindMethod        = { fg = c.method, bg = c.none },
-        BlinkCmpKindModule        = { fg = c.module, bg = c.none },
-        BlinkCmpKindNamespace     = { fg = c.namespace, bg = c.none },
-        BlinkCmpKindNull          = { fg = c.redundant, bg = c.none },
-        BlinkCmpKindNumber        = { fg = c.number, bg = c.none },
-        BlinkCmpKindObject        = { fg = c.keyword, bg = c.none },
-        BlinkCmpKindOperator      = { fg = c.operator, bg = c.none },
-        BlinkCmpKindPackage       = { fg = c.module, bg = c.none },
-        BlinkCmpKindProperty      = { fg = c.member, bg = c.none },
-        BlinkCmpKindReference     = { fg = c.variable, bg = c.none },
-        BlinkCmpKindSnippet       = { fg = c.macro, bg = c.none },
-        BlinkCmpKindString        = { fg = c.string, bg = c.none },
-        BlinkCmpKindStruct        = { fg = c.struct, bg = c.none },
-        BlinkCmpKindText          = { fg = c.fg, bg = c.none },
-        BlinkCmpKindTypeParameter = "@lsp.type.typeParameter",
-        BlinkCmpKindUnit          = { fg = c.struct, bg = c.none },
-        BlinkCmpKindValue         = { fg = c.string, bg = c.none },
-        BlinkCmpKindVariable      = { fg = c.variable, bg = c.none },
     }
+
+    kinds.merge(c, highlights, "BlinkCmpKind")
+
+    return highlights
 end
 
 return M
