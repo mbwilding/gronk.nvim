@@ -48,8 +48,8 @@ function M.get(c, opts)
         TabLineFill = { bg = c.bg },
         TabLineSel = { fg = c.window_bg, bg = c.keyword },
         VertSplit = { fg = c.window_accent, bg = c.window_bg }, -- Vertical split border
-        WinBar = { fg = c.fg, bg = c.window_bg },
-        WinBarNC = { fg = c.fg, bg = c.window_bg },
+        WinBar = { fg = c.fg },
+        WinBarNC = { fg = c.fg },
         WinSeparator = { fg = c.bg, bg = c.none }, -- Window border
         healthError = { fg = c.error },
         healthSuccess = { fg = c.ok },
