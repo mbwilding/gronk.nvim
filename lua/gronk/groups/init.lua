@@ -5,7 +5,7 @@ local M = {}
 
 M.plugins = {
     ["blink.cmp"] = "blink",
-    ["copilot.nvim"] = "copilot",
+    ["copilot.lua"] = "copilot",
     ["dashboard-nvim"] = "dashboard",
     ["kubectl.nvim"] = "kubectl",
     ["lazy.nvim"] = "lazy",
