@@ -20,6 +20,7 @@ M.plugins = {
     ["nvim-tree.lua"] = "nvim-tree",
     ["nvim-treesitter-context"] = "treesitter-context",
     ["oil.nvim"] = "oil",
+    ["snacks.nvim"] = "snacks",
     ["telescope.nvim"] = "telescope",
     ["which-key.nvim"] = "which-key",
 
