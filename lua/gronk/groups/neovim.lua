@@ -30,8 +30,8 @@ function M.get(c, opts)
         Directory = { fg = c.namespace },
         EndOfBuffer = { fg = c.bg }, -- End of buffer `~`
         ErrorMsg = { fg = c.error }, -- Error messages on the commandline
-        FloatBorder = { fg = c.error, bg = c.none },
-        FloatTitle = { fg = c.error, bg = c.none },
+        FloatBorder = { fg = c.macro, bg = c.none },
+        FloatTitle = { fg = c.macro, bg = c.none },
         Folded = { fg = c.keyword, bg = c.none }, -- Folded gutter
         IncSearch = { fg = c.bg, bg = c.macro }, -- Yank highlight
         LineNr = { fg = c.redundant, bg = c.none }, -- Current line number
@@ -40,10 +40,10 @@ function M.get(c, opts)
         LspInlayHint = { fg = c.inlay, bg = c.window_bg },
         MatchParen = { bg = c.namespace }, -- Matching pair highlight
         Normal = { fg = c.fg, bg = c.bg }, -- Current window
-        NormalFloat = { fg = c.fg, bg = c.bg }, -- Normal text in floating windows
+        NormalFloat = { bg = c.window_bg }, -- Normal text in floating windows
         NormalNC = { fg = c.fg, bg = c.bg }, -- Non-current window
         NormalSB = { fg = c.fg, bg = c.bg }, -- Normal text in sidebar
-        Pmenu = { bg = c.bg },
+        Pmenu = { bg = c.window_bg },
         StatusLine = { fg = c.fg, bg = c.bg },
         StatusLineNC = { fg = c.fg, bg = c.bg },
         TabLine = { fg = c.fg, bg = c.window_accent },
