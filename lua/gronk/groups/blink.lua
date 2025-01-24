@@ -4,7 +4,7 @@ function M.get(c, opts)
     local highlights = {
         BlinkCmpItemIdx = { fg = c.number },
 
-        BlinkCmpDoc = { fg = c.fg, bg = c.none },
+        -- BlinkCmpDoc                 = { fg = c.fg, bg = c.none },
         -- BlinkCmpDocBorder           = { fg = c.border_highlight, bg = c.bg_float },
         -- BlinkCmpGhostText           = { fg = c.terminal_black },
         -- BlinkCmpKindCodeium         = { fg = c.teal, bg = c.none },

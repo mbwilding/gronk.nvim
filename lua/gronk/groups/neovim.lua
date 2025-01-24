@@ -43,7 +43,7 @@ function M.get(c, opts)
         NormalFloat = { fg = c.fg, bg = c.bg }, -- Normal text in floating windows
         NormalNC = { fg = c.fg, bg = c.bg }, -- Non-current window
         NormalSB = { fg = c.fg, bg = c.bg }, -- Normal text in sidebar
-        Pmenu = { bg = c.window_accent },
+        Pmenu = { bg = c.bg },
         StatusLine = { fg = c.fg, bg = c.bg },
         StatusLineNC = { fg = c.fg, bg = c.bg },
         TabLine = { fg = c.fg, bg = c.window_accent },
