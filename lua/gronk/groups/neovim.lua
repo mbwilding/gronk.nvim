@@ -30,6 +30,7 @@ function M.get(c, opts)
         Directory = { fg = c.namespace },
         EndOfBuffer = { fg = c.bg }, -- End of buffer `~`
         ErrorMsg = { fg = c.error }, -- Error messages on the commandline
+        FloatBorder = { fg = c.error, bg = c.none }, -- Normal text in floating windows
         Folded = { fg = c.keyword, bg = c.none }, -- Folded gutter
         IncSearch = { fg = c.bg, bg = c.macro }, -- Yank highlight
         LineNr = { fg = c.redundant, bg = c.none }, -- Current line number

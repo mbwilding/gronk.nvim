@@ -39,7 +39,7 @@ function M.get(c, opts)
         SnacksDashboardFile = { fg = c.macro, bg = c.none },    -- Dashboard file items
         SnacksDashboardDir = { fg = c.namespace, bg = c.none }, -- Daskboard directory items
         -- SnacksDashboardFooter = { link = "Title" },                   -- Dashboard footer text
-        -- SnacksDashboardHeader = { link = "Title" },                   -- Dashboard header text
+        SnacksDashboardHeader = { fg = c.namespace },           -- Dashboard header text
         -- SnacksDashboardIcon = { link = "Special" },                   -- Dashboard icons
         -- SnacksDashboardKey = { link = "Number" },                     -- Keybind text
         -- SnacksDashboardTerminal = { link = "SnacksDashboardNormal" }, -- Terminal text
