@@ -40,7 +40,7 @@ function M.get(c, opts)
         LspInlayHint = { fg = c.inlay, bg = c.window_bg },
         MatchParen = { bg = c.namespace }, -- Matching pair highlight
         Normal = { fg = c.fg, bg = c.bg }, -- Current window
-        NormalFloat = { fg = c.fg, bg = c.window_bg }, -- Normal text in floating windows
+        NormalFloat = { fg = c.fg, bg = c.bg }, -- Normal text in floating windows
         NormalNC = { fg = c.fg, bg = c.bg }, -- Non-current window
         NormalSB = { fg = c.fg, bg = c.bg }, -- Normal text in sidebar
         Pmenu = { bg = c.window_accent },
