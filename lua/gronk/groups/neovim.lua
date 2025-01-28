@@ -39,6 +39,7 @@ function M.get(c, opts)
         LineNrBelow = { fg = c.redundant, bg = c.none }, -- Below current line numbers
         LspInlayHint = { fg = c.inlay, bg = c.window_bg },
         MatchParen = { bg = c.namespace }, -- Matching pair highlight
+        NonText = { fg = c.redundant },
         Normal = { fg = c.fg, bg = c.bg }, -- Current window
         NormalFloat = { bg = c.window_bg }, -- Normal text in floating windows
         NormalNC = { fg = c.fg, bg = c.bg }, -- Non-current window
