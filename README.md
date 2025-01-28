@@ -15,7 +15,7 @@ return {
       transparent = true,
     })
 
-    vim.cmd([[colorscheme gronk-rider]])
+    vim.cmd([[colorscheme gronk-wilding]])
   end,
 }
 ```
@@ -23,9 +23,15 @@ return {
 #### Themes
 
 ```vim
-" A JetBrains Rider Dark inspired theme
+" JetBrains Rider Dark inspired - Expanded
+colorscheme gronk-wilding
+
+" JetBrains Rider Dark inspired - Original
 colorscheme gronk-rider
 
-" A custom theme
-colorscheme gronk-wilding
+" Monochrome
+colorscheme gronk-mono
+
+" Rock and roll McDonalds
+colorscheme gronk-mcdonalds
 ```
