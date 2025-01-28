@@ -2,6 +2,7 @@ local M = {}
 
 function M.get(c, opts)
     return {
+        SnacksPicker = { bg = c.black },
         -- SnacksNormal = { link = "NormalFloat" },                      -- Normal for the float window
         -- SnacksWinBar = { link = "Title" },                            -- Title of the window
         -- SnacksBackdrop = { bg = c.none },                             -- Backdrop
@@ -36,10 +37,10 @@ function M.get(c, opts)
         -- SnacksNotifierFooterTrace = { link = "DiagnosticHint" },      -- Footer for Trace notification
         -- SnacksDashboardNormal = { link = "Normal" },                  -- Normal for the dashboard
         -- SnacksDashboardDesc = { link = "Special" },                   -- Description text in dashboard
-        SnacksDashboardFile = { fg = c.macro, bg = c.none },    -- Dashboard file items
+        SnacksDashboardFile = { fg = c.macro, bg = c.none }, -- Dashboard file items
         SnacksDashboardDir = { fg = c.namespace, bg = c.none }, -- Daskboard directory items
         -- SnacksDashboardFooter = { link = "Title" },                   -- Dashboard footer text
-        SnacksDashboardHeader = { fg = c.namespace },           -- Dashboard header text
+        SnacksDashboardHeader = { fg = c.namespace }, -- Dashboard header text
         -- SnacksDashboardIcon = { link = "Special" },                   -- Dashboard icons
         -- SnacksDashboardKey = { link = "Number" },                     -- Keybind text
         -- SnacksDashboardTerminal = { link = "SnacksDashboardNormal" }, -- Terminal text
