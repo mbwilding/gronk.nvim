@@ -1,36 +1,36 @@
 return {
-    -- Default
-    fg = "#e7b307",
-    bg = "#bf0f1e",
-    window_bg = "#dd1324",
-    window_accent = "#ee3a49",
+    -- default
+    fg = "#bdbdbd",
+    bg = "#da291c",
+    window_bg = "#b00e29",
+    window_accent = "#ef3141",
 
-    -- Code
-    attribute = "#ed94c0",
-    comment = "#85c46c",
-    constant = "#83f1ff",
-    delimiter = "#a4a4a4",
-    enum = "#fbff91",
-    escape = "#ed94c0",
-    interface = "#9591ff",
-    keyword = "#6c95eb",
-    macro = "#4eade5",
-    member = "#91c2ff",
-    method = "#39cc8f",
-    module = "#ffc794",
-    namespace = "#ffb083",
-    number = "#ed94c0",
-    operator = "#eeeeee",
-    redundant = "#787878",
-    string = "#c9a26d",
-    struct = "#c191ff",
-    variable = "#edeecf",
+    -- code
+    attribute = "#ffa500", -- cheese orange
+    comment = "#bdb76b",   -- beige for buns
+    constant = "#ffc72c",  -- golden arches
+    delimiter = "#a9a9a9", -- dark gray
+    enum = "#ff8c00",      -- bright orange
+    escape = "#ffc72c",    -- golden
+    interface = "#daa520", -- goldenrod
+    keyword = "#ffcc00",   -- fry yellow
+    macro = "#ff8c00",     -- bright orange
+    member = "#ffc72c",    -- golden
+    method = "#ffa500",    -- cheese orange
+    module = "#daa520",    -- goldenrod
+    namespace = "#ffcc00", -- fry yellow
+    number = "#ffc72c",    -- golden
+    operator = "#ffffff",  -- white for high contrast
+    redundant = "#787878", -- iconic silver
+    string = "#ff8c00",    -- bright orange
+    struct = "#daa520",    -- goldenrod
+    variable = "#ffcc00",  -- fry yellow
 
-    -- Other
-    ok = "#39cc8f",
-    info = "#4eade5",
-    hint = "#66c3cc",
-    warn = "#ffb083",
-    error = "#ff4747",
-    inlay = "#4f5258",
+    -- other
+    ok = "#39cc8f",    -- keep as is for positive signals
+    info = "#4eade5",  -- keep as is
+    hint = "#66c3cc",  -- keep as is
+    warn = "#ffcc00",  -- warning in yellow
+    error = "#ff6347", -- tomato for error
+    inlay = "#4f5258", -- keep as is for subtle inlays
 }
