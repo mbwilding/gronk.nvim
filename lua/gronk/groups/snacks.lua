@@ -2,7 +2,7 @@ local M = {}
 
 function M.get(c, opts)
     return {
-        SnacksPicker = { bg = c.black },
+        SnacksPicker = { bg = c.bg },
         -- SnacksNormal = { link = "NormalFloat" },                      -- Normal for the float window
         -- SnacksWinBar = { link = "Title" },                            -- Title of the window
         -- SnacksBackdrop = { bg = c.none },                             -- Backdrop
