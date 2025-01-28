@@ -3,7 +3,7 @@ local M = {}
 function M.get(c, opts)
     return {
         NoiceAttr = { fg = c.fg },
-        NoiceFormatProgressDone = { fg = c.macro },
+        NoiceFormatProgressDone = { bg = c.macro },
     }
 end
 
