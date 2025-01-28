@@ -18,7 +18,7 @@ return {
     member = "#66c3cc",
     method = "#39cc8f",
     module = "#ffc794",
-    namespace = "#ffb083",
+    namespace = "#c191ff",
     number = "#ed94c0",
     operator = "#bdbdbd",
     redundant = "#787878",
