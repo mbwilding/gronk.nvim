@@ -10,7 +10,7 @@ function M.get(c, opts)
 
         TelescopeBorder = { fg = c.macro, bg = c.window_bg },
         TelescopeMatching = { fg = c.macro, bg = c.window_bg },
-        TelescopeNormal = { fg = c.namespace, bg = c.window_bg },
+        TelescopeNormal = { fg = c.fg, bg = c.bg },
     }
 end
 
