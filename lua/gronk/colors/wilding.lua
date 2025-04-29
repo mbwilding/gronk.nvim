@@ -4,6 +4,7 @@ return {
     bg = "#000000",
     window_bg = "#101010",
     window_accent = "#202020",
+    window_split = "#404040",
 
     -- Code
     attribute = "#ed94c0",

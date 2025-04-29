@@ -53,7 +53,7 @@ function M.get(c, opts)
         VertSplit = { fg = c.window_accent, bg = c.window_bg }, -- Vertical split border
         WinBar = { fg = c.fg }, -- bg = c.window_bg
         WinBarNC = { fg = c.fg },
-        WinSeparator = { fg = c.bg, bg = c.none }, -- Window border
+        WinSeparator = { fg = c.window_split, bg = c.bg }, -- Window border
         healthError = { fg = c.error },
         healthSuccess = { fg = c.ok },
         healthWarning = { fg = c.warn },
