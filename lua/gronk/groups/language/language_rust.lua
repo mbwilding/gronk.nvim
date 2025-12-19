@@ -4,6 +4,7 @@ function M.get(c)
     return {
         ["@lsp.mod.crateRoot"] = { fg = c.namespace },
         ["@lsp.mod.declaration.rust"] = { fg = c.member },
+        ["@lsp.type.const.rust"] = { fg = c.constant },
         ["@lsp.type.struct.rust"] = { fg = c.constant },
         ["@lsp.type.typeAlias.rust"] = { fg = c.struct },
         ["@lsp.typemod.builtinAttribute.attribute.rust"] = { fg = c.macro },
