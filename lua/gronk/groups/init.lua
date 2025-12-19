@@ -46,6 +46,7 @@ function M.setup(colors, opts)
         ["language/language"] = true,
         -- TODO: Detect languages based on available LSP
         ["language/language_csharp"] = true,
+        ["language/language_editorconfig"] = true,
         ["language/language_json"] = true,
         ["language/language_rust"] = true,
         ["language/language_xml"] = true,
