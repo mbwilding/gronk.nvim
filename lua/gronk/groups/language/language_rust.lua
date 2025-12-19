@@ -4,10 +4,18 @@ function M.get(c)
     return {
         ["@lsp.mod.crateRoot"] = { fg = c.namespace },
         ["@lsp.mod.declaration.rust"] = { fg = c.member },
+        ["@lsp.type.struct.rust"] = { fg = c.constant },
+        ["@lsp.typemod.decorator.attribute.rust"] = { fg = c.macro },
         ["@lsp.typemod.namespace.crateRoot"] = { fg = c.namespace },
-        ["@lsp.typemod.variable.declaration.rust"] = { fg = c.struct },
+        ["@lsp.typemod.variable.declaration.rust"] = { fg = c.constant },
         ["@type.qualifier.rust"] = { fg = c.keyword, underline = true },
+        ["rustAttribute"] = { fg = c.attribute },
+        ["rustBoolean"] = { fg = c.keyword },
+        ["rustDerive"] = { fg = c.macro },
+        ["rustEnumVariant"] = { fg = c.constant },
+        ["rustMacro"] = { fg = c.macro },
         ["rustModPath"] = { fg = c.namespace },
+        ["rustStorage"] = { fg = c.keyword },
     }
 end
 
