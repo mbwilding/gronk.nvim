@@ -45,6 +45,7 @@ function M.setup(colors, opts)
         neovim = true,
         ["language/language"] = true,
         -- TODO: Detect languages based on available LSP
+        ["language/language_bash"] = true,
         ["language/language_csharp"] = true,
         ["language/language_editorconfig"] = true,
         ["language/language_gitignore"] = true,
