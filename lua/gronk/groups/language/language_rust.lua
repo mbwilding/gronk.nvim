@@ -7,7 +7,7 @@ function M.get(c)
         ["@lsp.type.struct.rust"] = { fg = c.constant },
         ["@lsp.typemod.decorator.attribute.rust"] = { fg = c.macro },
         ["@lsp.typemod.namespace.crateRoot"] = { fg = c.namespace },
-        ["@lsp.typemod.variable.declaration.rust"] = { fg = c.constant },
+        ["@lsp.typemod.parameter.reference.rust"] = { fg = c.fg },
         ["@type.qualifier.rust"] = { fg = c.keyword, underline = true },
         ["rustAttribute"] = { fg = c.attribute },
         ["rustBoolean"] = { fg = c.keyword },
@@ -15,7 +15,9 @@ function M.get(c)
         ["rustEnumVariant"] = { fg = c.constant },
         ["rustMacro"] = { fg = c.macro },
         ["rustModPath"] = { fg = c.namespace },
+        ["rustSigil"] = { fg = c.keyword },
         ["rustStorage"] = { fg = c.keyword },
+        ["rustType"] = { fg = c.keyword },
     }
 end
 
