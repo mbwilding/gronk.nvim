@@ -2,6 +2,7 @@ local M = {}
 
 function M.get(c)
     return {
+        ["@lsp.type.constant.cs"] = { fg = c.constant },
         ["@lsp.type.extensionMethod.cs"] = { fg = c.method },
         ["@lsp.type.field.cs"] = { fg = c.constant },
         ["@lsp.type.namespace.cs"] = { fg = c.struct },
