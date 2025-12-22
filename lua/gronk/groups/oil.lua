@@ -5,11 +5,11 @@ function M.get(c, opts)
         OilFile = { fg = c.macro },
         OilLink = { fg = c.keyword },
         OilLinkTarget = { fg = c.comment },
-        OilGitAdded = { fg = c.ok },
-        OilGitModified = { fg = c.info },
-        OilGitRenamed = { fg = c.hint },
-        OilGitUntracked = { fg = c.warn },
-        OilGitIgnored = { fg = c.redundant },
+        -- OilGitAdded = { fg = c.ok },
+        -- OilGitModified = { fg = c.info },
+        -- OilGitRenamed = { fg = c.hint },
+        -- OilGitUntracked = { fg = c.warn },
+        -- OilGitIgnored = { fg = c.redundant },
     }
 end
 
