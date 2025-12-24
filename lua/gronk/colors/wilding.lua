@@ -21,7 +21,7 @@ return {
     module = "#ffc794",
     namespace = "#ffb083",
     number = "#ed94c0",
-    operator = "#eeeeee",
+    operator = "#bdbdbd",
     redundant = "#787878",
     string = "#c9a26d",
     struct = "#c191ff",

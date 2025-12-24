@@ -7,6 +7,8 @@ function M.get(c)
         ["@lsp.type.field.cs"] = { fg = c.constant },
         ["@lsp.type.namespace.cs"] = { fg = c.struct },
         ["@lsp.type.stringEscapeCharacter.cs"] = { fg = c.escape },
+        ["csIsType"] = { fg = c.operator },
+        ["csTypeOfOperand"] = { fg = c.operator },
     }
 end
 
