@@ -2,6 +2,8 @@
 
 Neovim themes
 
+![Rider](promo.jpg)
+
 ### Setup
 
 Lazy
