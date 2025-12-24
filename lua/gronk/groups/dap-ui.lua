@@ -12,8 +12,8 @@ function M.get(c, opts)
         DapUIStepOutNC = { fg = c.info },
         DapUIStepBack = { fg = c.info },
         DapUIStepBackNC = { fg = c.info },
-        DapUIRestart = { fg = c.ok },
-        DapUIRestartNC = { fg = c.ok },
+        DapUIRestart = { fg = c.warn },
+        DapUIRestartNC = { fg = c.warn },
         DapUIStop = { fg = c.error },
         DapUIStopNC = { fg = c.error },
     }
