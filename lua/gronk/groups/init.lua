@@ -16,6 +16,7 @@ M.plugins = {
     ["noice.nvim"] = "noice",
     ["nvim-cmp"] = "cmp",
     ["nvim-dap"] = "dap",
+    ["nvim-dap-ui"] = "dap-ui",
     ["nvim-notify"] = "notify",
     ["nvim-tree.lua"] = "nvim-tree",
     ["nvim-treesitter-context"] = "treesitter-context",
