@@ -1,6 +1,6 @@
 # Gronk
 
-Neovim themes
+A custom theme based on Rider Dark that is OLED friendly.
 
 ![gronk](promo.jpg)
 
