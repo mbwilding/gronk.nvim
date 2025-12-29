@@ -34,7 +34,7 @@ function M.load()
         -- Core / custom semantic groups
         Comment = { fg = c.comment },
         Constant = { fg = c.constant, bg = c.none },
-        Delimiter = { fg = c.delimiter },
+        Delimiter = { fg = c.operator },
         Enum = { fg = c.enum, bg = c.none },
         File = { fg = c.macro, bg = c.none },
         Function = { fg = c.method, bg = c.none },
@@ -70,6 +70,7 @@ function M.load()
         ["@lsp.type.invalidEscapeSequence"] = { fg = c.error },
         ["@lsp.type.keyword"] = { fg = c.keyword },
         ["@lsp.type.namespace"] = { fg = c.namespace },
+        ["@lsp.type.punctuation"] = { fg = c.operator },
         ["@lsp.type.stringEscapeCharacter"] = { fg = c.escape },
         ["@lsp.typemod.decorator.attribute"] = { fg = c.attribute },
         ["@lsp.typemod.derive"] = { fg = c.interface },
@@ -88,7 +89,7 @@ function M.load()
         ["@lsp.typemod.typeParameter.declaration"] = { fg = c.struct },
         ["@lsp.typemod.variable"] = { fg = c.variable },
         ["@module"] = { fg = c.namespace },
-        ["@punctuation.special"] = { fg = c.delimiter },
+        ["@punctuation.special"] = { fg = c.operator },
         ["@string.documentation"] = { fg = c.comment },
         ["@string.escape"] = { fg = c.escape },
         ["@variable"] = { fg = c.variable },
@@ -104,7 +105,7 @@ function M.load()
         ["@lsp.typemod.const.constant.rust"] = { fg = c.constant },
         ["@lsp.typemod.namespace.crateRoot"] = { fg = c.namespace },
         ["@lsp.typemod.parameter.declaration.rust"] = { fg = c.variable },
-        ["@lsp.typemod.punctuation.unsafe.rust"] = { fg = c.delimiter },
+        ["@lsp.typemod.punctuation.unsafe.rust"] = { fg = c.operator },
         ["@type.qualifier.rust"] = { fg = c.keyword, underline = true },
 
         -- Editorconfig
@@ -220,7 +221,7 @@ function M.load()
         KubectlDeprecated = { fg = c.redundant },
         KubectlError = { fg = c.error },
         KubectlExperimental = { fg = c.namespace },
-        KubectlGray = { fg = c.delimiter },
+        KubectlGray = { fg = c.operator },
         KubectlHeader = { fg = c.keyword },
         KubectlInfo = { fg = c.info },
         KubectlNote = { fg = c.hint },
