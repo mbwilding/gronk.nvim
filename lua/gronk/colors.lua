@@ -1,5 +1,7 @@
 return {
     -- Default
+    none = "NONE",
+    black = "#000000",
     fg = "#bdbdbd",
     bg = "#000000",
     window_bg = "#101010",
