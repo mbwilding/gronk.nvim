@@ -374,6 +374,7 @@ function M.load()
 
     for group, hl in pairs(highlights) do
         hl = type(hl) == "string" and { link = hl } or hl
+        ---@diagnostic disable-next-line: param-type-mismatch
         vim.api.nvim_set_hl(0, group, hl)
     end
 end
