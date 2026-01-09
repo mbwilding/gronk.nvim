@@ -186,6 +186,7 @@ function M.load()
 
         -- DAP
         DapBreakpoint = { fg = c.error },
+        DapBreakpointCondition = { fg = c.error },
         DapStopped = { fg = c.warn },
         DapStoppedLine = { bg = c.error },
         NvimDapVirtualText = { fg = c.hint },
