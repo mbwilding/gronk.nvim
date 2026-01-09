@@ -2,7 +2,6 @@ local M = {}
 
 local function set_highlights(highlights)
     local groups = vim.tbl_keys(highlights)
-    table.sort(groups)
 
     for _, group in ipairs(groups) do
         vim.api.nvim_set_hl(0, group, highlights[group])
@@ -11,7 +10,6 @@ end
 
 local function link_highlights(links)
     local groups = vim.tbl_keys(links)
-    table.sort(groups)
 
     for _, group in ipairs(groups) do
         vim.api.nvim_set_hl(0, group, { link = links[group] })
@@ -31,7 +29,7 @@ function M.load()
     local c = require("gronk.colors")
 
     local specs = {
-        -- Core / custom semantic groups
+        -- Core
         Comment = { fg = c.comment },
         Constant = { fg = c.constant, bg = c.none },
         Delimiter = { fg = c.operator },
