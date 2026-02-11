@@ -122,7 +122,7 @@ function M.load()
         DiagnosticInfo = { fg = c.info },
         DiagnosticOk = { fg = c.ok },
         DiagnosticUnderlineError = { underline = true, sp = c.error },
-        DiagnosticUnderlineHint = { underline = true, sp = c.hint },
+        DiagnosticUnderlineHint = { underline = false, sp = c.hint },
         DiagnosticUnderlineInfo = { underline = true, sp = c.info },
         DiagnosticUnderlineOk = { underline = true, sp = c.ok },
         DiagnosticUnderlineWarn = { underline = true, sp = c.warn },
