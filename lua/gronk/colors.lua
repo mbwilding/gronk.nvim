@@ -1,6 +1,7 @@
 return {
     -- Default
     none = "NONE",
+    white = "#FFFFFF",
     black = "#000000",
     fg = "#bdbdbd",
     bg = "#000000",

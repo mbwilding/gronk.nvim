@@ -145,7 +145,8 @@ function M.load()
         IncSearch = { fg = c.bg, bg = c.macro },
         LineNr = { fg = c.redundant, bg = c.none },
         LspInlayHint = { fg = c.inlay, bg = c.window_bg },
-        MatchParen = { bg = c.namespace },
+
+        MatchParen = { bg = c.white, bold = true },
         NonText = { fg = c.redundant },
         Normal = { fg = c.fg, bg = c.bg },
         NormalFloat = { bg = c.window_bg },
