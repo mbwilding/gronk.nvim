@@ -146,7 +146,7 @@ function M.load()
         LineNr = { fg = c.redundant, bg = c.none },
         LspInlayHint = { fg = c.inlay, bg = c.window_bg },
 
-        MatchParen = { bg = c.white, bold = true },
+        MatchParen = { bold = true },
         NonText = { fg = c.redundant },
         Normal = { fg = c.fg, bg = c.bg },
         NormalFloat = { bg = c.window_bg },
