@@ -1,5 +1,13 @@
 local M = {}
 
+local config = {
+    transparent = false,
+}
+
+function M.setup(opts)
+    config = vim.tbl_deep_extend("force", config, opts or {})
+end
+
 local function set_highlights(highlights)
     local groups = vim.tbl_keys(highlights)
 
@@ -148,20 +156,20 @@ function M.load()
 
         MatchParen = { bold = true },
         NonText = { fg = c.redundant },
-        Normal = { fg = c.fg, bg = c.bg },
-        NormalFloat = { bg = c.window_bg },
-        NormalNC = { fg = c.fg, bg = c.bg },
-        NormalSB = { fg = c.fg, bg = c.bg },
+        Normal = { fg = c.fg, bg = config.transparent and c.none or c.bg },
+        NormalFloat = { bg = config.transparent and c.none or c.window_bg },
+        NormalNC = { fg = c.fg, bg = config.transparent and c.none or c.bg },
+        NormalSB = { fg = c.fg, bg = config.transparent and c.none or c.bg },
         Pmenu = { bg = c.window_bg },
-        StatusLine = { fg = c.fg, bg = c.bg },
+        StatusLine = { fg = c.fg, bg = config.transparent and c.none or c.bg },
         TabLine = { fg = c.fg, bg = c.window_accent },
-        TabLineFill = { bg = c.bg },
+        TabLineFill = { bg = config.transparent and c.none or c.bg },
         TabLineSel = { fg = c.window_bg, bg = c.keyword },
         Title = { fg = c.macro },
         VertSplit = { fg = c.window_accent, bg = c.window_bg },
         WinBar = { fg = c.fg },
         WinBarNC = { fg = c.fg },
-        WinSeparator = { fg = c.window_split, bg = c.bg },
+        WinSeparator = { fg = c.window_split, bg = config.transparent and c.none or c.bg },
         healthError = { fg = c.error },
         healthSuccess = { fg = c.ok },
         healthWarning = { fg = c.warn },
@@ -311,10 +319,10 @@ function M.load()
         OilLinkTarget = { fg = c.comment },
 
         -- Snacks
-        SnacksDashboardDir = { fg = c.namespace, bg = c.bg },
-        SnacksDashboardFile = { fg = c.macro, bg = c.bg },
-        SnacksDashboardHeader = { fg = c.namespace, bg = c.bg },
-        SnacksPicker = { fg = c.fg, bg = c.bg },
+        SnacksDashboardDir = { fg = c.namespace, bg = config.transparent and c.none or c.bg },
+        SnacksDashboardFile = { fg = c.macro, bg = config.transparent and c.none or c.bg },
+        SnacksDashboardHeader = { fg = c.namespace, bg = config.transparent and c.none or c.bg },
+        SnacksPicker = { fg = c.fg, bg = config.transparent and c.none or c.bg },
 
         -- Telescope
         TelescopeBorder = { fg = c.macro, bg = c.window_bg },
