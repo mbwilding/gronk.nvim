@@ -35,6 +35,9 @@ function M.load()
     vim.g.colors_name = "gronk"
 
     local c = require("gronk.colors")
+    if config.transparent then
+        c.bg = c.none
+    end
 
     local specs = {
         -- Core
@@ -153,7 +156,6 @@ function M.load()
         IncSearch = { fg = c.bg, bg = c.macro },
         LineNr = { fg = c.redundant, bg = c.none },
         LspInlayHint = { fg = c.inlay, bg = c.window_bg },
-
         MatchParen = { bold = true },
         NonText = { fg = c.redundant },
         Normal = { fg = c.fg, bg = config.transparent and c.none or c.bg },
@@ -262,22 +264,14 @@ function M.load()
         -- Neogit
         NeogitBranch = { fg = c.macro },
         NeogitBranchHead = { fg = c.struct },
-        NeogitChangeAdded = { bg = c.ok },
-        NeogitChangeCopied = { bg = c.ok },
-        NeogitChangeDeleted = { bg = c.error },
-        NeogitChangeModified = { bg = c.warn },
-        NeogitChangeNewFile = { bg = c.ok },
-        NeogitChangeRenamed = { bg = c.warn },
-        NeogitChangeUnmerged = { bg = c.redundant },
-        NeogitChangeUpdated = { bg = c.warn },
-        NeogitDiffAdd = { fg = c.black, bg = c.ok },
-        NeogitDiffAddHighlight = { fg = c.ok, bg = c.bg },
-        NeogitDiffAdditions = { fg = c.ok },
-        NeogitDiffContext = { fg = c.fg },
-        NeogitDiffContextHighlight = { fg = c.fg, bg = c.bg },
-        NeogitDiffDelete = { fg = c.black, bg = c.error },
-        NeogitDiffDeleteHighlight = { fg = c.error, bg = c.bg },
-        NeogitDiffDeletions = { fg = c.error },
+        NeogitChangeAdded = { fg = c.ok, bg = c.bg },
+        NeogitChangeCopied = { fg = c.ok, bg = c.bg },
+        NeogitChangeDeleted = { fg = c.error, bg = c.bg },
+        NeogitChangeModified = { fg = c.warn, bg = c.bg },
+        NeogitChangeNewFile = { fg = c.ok, bg = c.bg },
+        NeogitChangeRenamed = { fg = c.warn, bg = c.bg },
+        NeogitChangeUnmerged = { fg = c.redundant, bg = c.bg },
+        NeogitChangeUpdated = { fg = c.warn, bg = c.bg },
         NeogitFold = { fg = c.redundant },
         NeogitHead = { fg = c.keyword },
         NeogitHunkHeaderHighlight = { fg = c.fg, bg = c.bg },
