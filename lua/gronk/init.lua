@@ -24,7 +24,7 @@ local function link_highlights(links)
     end
 end
 
-function M.load()
+function M.load(variant)
     if vim.g.colors_name then
         vim.cmd("hi clear")
     end
@@ -32,9 +32,10 @@ function M.load()
     vim.cmd("syntax reset")
 
     vim.o.background = "dark"
-    vim.g.colors_name = "gronk"
+    vim.g.colors_name = variant and ("gronk-" .. variant) or "gronk"
 
-    local c = require("gronk.colors")
+    local palette = variant and ("gronk.colors_" .. variant) or "gronk.colors"
+    local c = require(palette)
 
     if config.transparent then
         c.bg = c.none
