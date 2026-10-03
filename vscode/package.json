@@ -1,0 +1,22 @@
+{
+  "name": "gronk-theme",
+  "displayName": "Gronk",
+  "description": "Gronk dark theme for VSCode",
+  "version": "1.0.0",
+  "publisher": "mbwilding",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Gronk",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gronk-color-theme.json"
+      }
+    ]
+  }
+}

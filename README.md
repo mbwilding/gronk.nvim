@@ -24,3 +24,11 @@ return {
   end,
 }
 ```
+
+## Nix
+
+```bash
+nix run github:mbwilding/gronk.nvim#gronk-vscode
+```
+
+Add the flake as an input (`inputs.nixpkgs.follows = "nixpkgs"`) and use `inputs.gronk.nvim.packages.${pkgs.stdenv.hostPlatform.system}.gronk-vscode`. An overlay is exported as `overlays.default`. Nothing needs editing on release, updating the flake input picks up the latest.
